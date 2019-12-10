@@ -1,2 +1,1 @@
-# pink
-Мой проект Pink
+Проект Pink, макет взял в htmlacademy.ru
