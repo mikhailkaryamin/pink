@@ -1,0 +1,42 @@
+.tariffs {
+  background-color: #f2f2f2;
+}
+
+.tariffs__description {
+  width: 100%;
+  text-align: center;
+  background-color: #283645;
+
+  &--mobile-invis {
+    display: none;
+  }
+}
+
+.tariffs__name {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.tariffs__cost {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.tariffs__addition {
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.tariffs__addition-value {
+  width: 70px;
+  background-color: tomato;
+
+  &--mobile-invis {
+    display: none;
+  }
+}

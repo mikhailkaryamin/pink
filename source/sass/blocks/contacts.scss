@@ -1,0 +1,31 @@
+.contacts__wrapper {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.contacts__text {
+  text-align: center;
+}
+
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.contacts__item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.contacts__type {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.contacts__value {
+  color: #d22856;
+  font-size: 24px;
+  font-weight: 300;
+}
