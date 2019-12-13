@@ -1,0 +1,31 @@
+.reviews__wrapper {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.reviews__headline {
+  display: none;
+}
+
+.reviews__item {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  text-align: center;
+}
+
+.reviews__item-text {
+  order: 2;
+  margin: 0;
+}
+
+.reviews__item-name-author {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  font-style: normal;
+}
+
+.reviews__item-about-author {
+  display: none;
+}

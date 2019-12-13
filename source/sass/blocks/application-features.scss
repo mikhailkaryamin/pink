@@ -1,0 +1,41 @@
+.application-features {
+  background-color: #ffffff;
+}
+
+.application-features__wrapper {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.application-features__slogan {
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.application-features__list {
+  position: relative;
+  padding-bottom: 280px;
+  list-style: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 80px);
+    width: 160px;
+    height: 270px;
+    background-image: url("/img/application-features-bg.jpg");
+    background-repeat: no-repeat;
+  }
+}
+
+.application-features__item {
+  text-align: center;
+}
+
+.application-features__item-headline {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
