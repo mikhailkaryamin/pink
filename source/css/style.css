@@ -350,12 +350,23 @@ a {
 .page-header {
   background-color: #283645; }
 
+.page-header__logo {
+  display: block;
+  height: 70px; }
+
 .main-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+  min-height: 260px; }
+
+.main-nav__toggle {
+  display: none; }
+
+.main-nav__wrapper {
+  width: 100%; }
 
 .site-list {
   display: -webkit-box;
@@ -367,20 +378,29 @@ a {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding-left: 0;
   list-style: none; }
 
 .site-list__item {
   text-align: center; }
 
 .site-list__link {
-  color: #ffffff; }
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+  text-transform: uppercase; }
 
 .application-download {
   background-color: #1d2631; }
 
-.application-download__wrapper {
+.application-download__container {
+  padding-top: 400px;
   padding-right: 20px;
   padding-left: 20px; }
+
+.application-download__wrapper {
+  text-align: center; }
 
 .application-download__slogan {
   display: none; }
@@ -402,10 +422,24 @@ a {
   font-weight: 300;
   line-height: 24px; }
 
+@media (min-width: 660px) {
+  .application-download__container {
+    width: 620px;
+    min-height: 620px;
+    margin: 0 auto;
+    padding-top: 0; }
+  .application-download__wrapper {
+    width: 300px; } }
+
 .os-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  padding: 0;
   list-style: none; }
 
 .os-list__item {
@@ -417,8 +451,8 @@ a {
   background-color: #ffffff; }
 
 .application-features__wrapper {
-  padding-right: 30px;
-  padding-left: 30px; }
+  padding-right: 20px;
+  padding-left: 20px; }
 
 .application-features__slogan {
   font-size: 24px;
@@ -428,6 +462,7 @@ a {
 .application-features__list {
   position: relative;
   padding-bottom: 280px;
+  padding-left: 0;
   list-style: none; }
   .application-features__list::before {
     content: "";
@@ -447,8 +482,25 @@ a {
   font-weight: 700;
   line-height: 24px; }
 
+@media (min-width: 660px) {
+  .application-features__wrapper {
+    width: 660px;
+    margin: 0 auto; }
+  .application-features__slogan {
+    font-size: 40px; }
+  .application-features__list {
+    width: 50%;
+    margin-left: auto;
+    padding-bottom: 0; }
+    .application-features__list::before {
+      left: 0; } }
+
 .research-application {
   display: none; }
+
+@media (min-width: 660px) {
+  .research-application {
+    display: block; } }
 
 .reviews__wrapper {
   padding-right: 30px;

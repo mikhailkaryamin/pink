@@ -2,9 +2,14 @@
   background-color: #1d2631;
 }
 
-.application-download__wrapper {
+.application-download__container {
+  padding-top: 400px;
   padding-right: 20px;
   padding-left: 20px;
+}
+
+.application-download__wrapper {
+  text-align: center;
 }
 
 .application-download__slogan {
@@ -29,4 +34,17 @@
   color: #ffffff;
   font-weight: 300;
   line-height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .application-download__container {
+    width: 620px;
+    min-height: 620px;
+    margin: 0 auto;
+    padding-top: 0;
+  }
+
+  .application-download__wrapper {
+    width: 300px;
+  }
 }

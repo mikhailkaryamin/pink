@@ -1,3 +1,9 @@
 .research-application {
   display: none;
 }
+
+@media (min-width: $tablet-width) {
+  .research-application {
+    display: block;
+  }
+}
