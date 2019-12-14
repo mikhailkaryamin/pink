@@ -571,8 +571,14 @@ a {
   background-image: url("/img/map-bc.jpg");
   background-position: 0 -444px; }
 
-.page-footer {
+.page-footer--main-mobile {
   display: none; }
+
+.social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none; }
 
 .inner-main {
   background-color: #ffffff;
@@ -672,5 +678,65 @@ a {
   padding: 47px 5px;
   text-align: center;
   background-color: #ffffff; }
+
+.page-main-form {
+  background-repeat: no-repeat; }
+
+.page-main-form__container {
+  padding: 0 20px;
+  text-align: center; }
+
+.page-main-form__competition-description {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 300;
+  background-color: #2b3848; }
+
+.form__about-travel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.form__container {
+  margin: 0;
+  padding: 0 20px; }
+  .form__container--bg {
+    background-color: #f2f2f2; }
+  .form__container--description-of-emotions, .form__container--button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+
+.form__list {
+  padding-left: 0;
+  list-style: none; }
+
+.form__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.form__label {
+  padding-left: 20px;
+  color: #d22856;
+  line-height: 30px;
+  text-transform: uppercase; }
+
+.form__button-submit {
+  border: none;
+  border-radius: 2px;
+  background-color: #2aab6d; }
 
 /*# sourceMappingURL=style.css.map */

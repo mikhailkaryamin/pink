@@ -1,3 +1,5 @@
 .page-footer {
-  display: none;
+  &--main-mobile {
+    display: none;
+  }
 }

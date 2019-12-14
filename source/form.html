@@ -22,22 +22,22 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="#">
+            <a class="site-list__link" href="index.html">
               Главная
             </a>
           </li>
           <li class="site-list__item">
-            <a href="#">
+            <a class="site-list__link" href="photo.html">
               Фотографии
             </a>
           </li>
           <li class="site-list__item">
-            <a href="#">
+            <a class="site-list__link" href="#">
               Конкурс
             </a>
           </li>
           <li class="site-list__item">
-            <a href="#">
+            <a class="site-list__link" href="#">
               HTML Academy
             </a>
           </li>
@@ -46,15 +46,15 @@
     </nav>
   </header>
   <main class="page-main-form">
-    <h1 class="vissualy-hidden">
+    <h1 class="visually-hidden">
       Расскажи о своем путешествии
     </h1>
-    <div class="page-main-form__competition">
+    <div class="page-main-form__container">
       <p class="page-main-form__competition-description">
         Конкурс на самое безбашенное путешествие с Пинк
       </p>
     </div>
-    <div class="page-main-form__conditions-of-competition">
+    <div class="page-main-form__container">
       <p class="page-main-form__conditions-of-competition-text">
         Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста,
         заполните форму ниже:
@@ -65,21 +65,21 @@
         Форма отправки истории путешествия
       </h2>
       <form class="form__about-travel" method="GET">
-        <div class="form__full-name-container">
-          <ul class="form__full-name">
-            <li class="form__full-name-item">
+        <div class="form__container form__container--full-name">
+          <ul class="form__list form__list--full-name">
+            <li class="form__item form__item--name-item">
               <label class="form__label" for="surname">
                 Фамилия:
               </label>
               <input class="input" type="text" name="surname" id="surname" placeholder="Укажите фамилию *" required>
             </li>
-            <li class="form__full-name-item">
+            <li class="form__item form__item--name-item">
               <label class="form__label" for="name">
                 Имя:
               </label>
               <input class="input" type="text" name="name" id="name" placeholder="Введите ваше имя *" required>
             </li>
-            <li class="form__full-name-item">
+            <li class="form__item form__item--name-item">
               <label class="form__label" for="mname">
                 Отчество:
               </label>
@@ -87,9 +87,13 @@
             </li>
           </ul>
         </div>
-        <div class="form__achievements-container">
-          <ul class="form__achievements-list">
-            <li class="form__achievements-option">
+        <div class="form__container form__container--bg form__container--achievements">
+          <span class="form__label">
+            Ваши безбашенные
+            достижения в путешествии
+          </span>
+          <ul class="form__list form__list--achievements-list">
+            <li class="form__item form__item--achievements-option">
               <label class="checkbox">
                 <input class="vissualy-hidden checkbox__input" type="checkbox" name="Take a selfie with a shark"
                   checked>
@@ -97,35 +101,35 @@
                 Сделал селфи с акулой
               </label>
             </li>
-            <li class="form__achievements-option">
+            <li class="form__item form__item--achievements-option">
               <label class="checkbox">
                 <input class="vissualy-hidden checkbox__input" type="checkbox" name="Sunburned on the beach" checked>
                 <span class="checkbox__img"></span>
                 Обгорел на пляже
               </label>
             </li>
-            <li class="form__achievements-option">
+            <li class="form__item form__item--achievements-option">
               <label class="checkbox">
                 <input class="vissualy-hidden checkbox__input" type="checkbox" name="Saw Chuck Norris">
                 <span class="checkbox__img"></span>
                 Видел Чака Норриса
               </label>
             </li>
-            <li class="form__achievements-option">
+            <li class="form__item form__item--achievements-option">
               <label class="checkbox">
                 <input class="vissualy-hidden checkbox__input" type="checkbox" name="I bought souvenirs">
                 <span class="checkbox__img"></span>
                 Накупил сувениров
               </label>
             </li>
-            <li class="form__achievements-option">
+            <li class="form__item form__item--achievements-option">
               <label class="checkbox">
                 <input class="vissualy-hidden checkbox__input" type="checkbox" name="Held the tower" checked>
                 <span class="checkbox__img"></span>
                 Удержал башню
               </label>
             </li>
-            <li class="form__achievements-option">
+            <li class="form__item form__item--achievements-option">
               <label class="checkbox">
                 <input class="vissualy-hidden checkbox__input" type="checkbox" name="Defeated the hotel">
                 <span class="checkbox__img"></span>
@@ -134,15 +138,15 @@
             </li>
           </ul>
         </div>
-        <div class="form__contacts-container">
-          <ul class="form__contacts-list">
-            <li class="form__phone-number">
+        <div class="form__container form__container--contacts-container">
+          <ul class="form__list form__list--contacts-list">
+            <li class="form__item form__item--phone-number">
               <label class="form__label" for="number">
                 Номер телефона
               </label>
               <input class="input" type="number" name="number" id="number" placeholder="Номер, пожалуйста">
             </li>
-            <li class="form__email">
+            <li class="form__item form__item--email">
               <label class="form__label" for="email">
                 Отчество:
               </label>
@@ -150,26 +154,26 @@
             </li>
           </ul>
         </div>
-        <div class="form__specify-os-container">
+        <div class="form__container form__container--bg form__container--specify-os">
           <span class="form__label">
             С каким приложением путешествовали?
           </span>
-          <ul class="form__specify-os-list">
-            <li class="form__specify-os-option">
+          <ul class="form__list form__list--specify-os-list">
+            <li class="form__item form__item--specify-os-option">
               <label class="radio">
                 <input class="vissualy-hidden radio__input" type="radio" name="os" value="Pink iOS" checked>
                 <span class="radio__img"></span>
                 Pink для iOS
               </label>
             </li>
-            <li class="form__specify-os-option">
+            <li class="form__item form__item--specify-os-option">
               <label class="radio">
                 <input class="vissualy-hidden radio__input" type="radio" name="os" value="Pink Android">
                 <span class="radio__img"></span>
                 Pink на Android
               </label>
             </li>
-            <li class="form__specify-os-option">
+            <li class="form__item form__item--specify-os-option">
               <label class="radio">
                 <input class="vissualy-hidden radio__input" type="radio" name="os" value="Windows Phone">
                 <span class="radio__img"></span>
@@ -178,7 +182,7 @@
             </li>
           </ul>
         </div>
-        <div class="form__description-of-emotions-container">
+        <div class="form__container form__container--description-of-emotions">
           <span class="form__label">
             Опишите свои эмоции
           </span>
@@ -189,20 +193,22 @@
             placeholder="Можно прям в красках, не стесняясь в выражениях">
           </textarea>
         </div>
-        <button class="form__button-submit" type="submit">
-          Отправить форму
-        </button>
-        <span class="form__small-text">
-          <sup>*</sup>
-          Поля обязательны для заполнения
-        </span>
+        <div class="form__container form__container--button">
+          <button class="form__button-submit" type="submit">
+            Отправить форму
+          </button>
+          <span class="form__small-text">
+            <sup>*</sup>
+            Поля обязательны для заполнения
+          </span>
+        </div>
       </form>
     </section>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <a href="#" class="page-footer__logo">
-        <img class="page-footer__logo-img" src="/img/page-footer__logotype-tablet.svg" width="147" height="40"
+        <img class="page-footer__logo-img" src="/img/page-footer__logotype-mobile.png" width="147" height="40"
           alt="Логотип Pink">
       </a>
       <ul class="page-footer__social-list social-list">
