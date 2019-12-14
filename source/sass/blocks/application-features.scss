@@ -3,8 +3,8 @@
 }
 
 .application-features__wrapper {
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .application-features__slogan {
@@ -16,6 +16,7 @@
 .application-features__list {
   position: relative;
   padding-bottom: 280px;
+  padding-left: 0;
   list-style: none;
 
   &::before {
@@ -38,4 +39,25 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .application-features__wrapper {
+    width: 660px;
+    margin: 0 auto;
+  }
+
+  .application-features__slogan {
+    font-size: 40px;
+  }
+
+  .application-features__list {
+    width: 50%;
+    margin-left: auto;
+    padding-bottom: 0;
+
+    &::before {
+      left: 0;
+    }
+  }
 }

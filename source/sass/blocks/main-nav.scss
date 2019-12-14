@@ -1,4 +1,13 @@
 .main-nav {
   display: flex;
   flex-wrap: wrap;
+  min-height: 260px;
+}
+
+.main-nav__toggle {
+  display: none;
+}
+
+.main-nav__wrapper {
+  width: 100%;
 }
