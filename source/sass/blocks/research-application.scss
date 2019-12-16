@@ -4,6 +4,28 @@
 
 @media (min-width: $tablet-width) {
   .research-application {
-    display: block;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 276px;
+    padding-left: 310px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 238px;
+      height: 276px;
+      background-image: url("/img/research-application-watch-tablet.png");
+    }
+  }
+
+  .research-application__description {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .research-application__link {
+    color: #d22856;
   }
 }

@@ -6,3 +6,16 @@
   display: block;
   height: 70px;
 }
+
+@media (min-width: $desktop-width) {
+  .page-header__wrapper {
+    display: flex;
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  .page-header__logo {
+    width: 147px;
+    height: 40px;
+  }
+}

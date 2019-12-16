@@ -8,3 +8,9 @@
   height: 10px;
   background-color: #bec2c7;
 }
+
+@media (min-width: $desktop-width) {
+  .bread-crumbs {
+    display: none;
+  }
+}

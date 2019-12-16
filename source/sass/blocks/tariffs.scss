@@ -40,3 +40,34 @@
     display: none;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .tariffs__list {
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  .tariffs__description {
+    width: 150px;
+
+    &--mobile-invis {
+      display: table-cell;
+    }
+
+    &--none {
+      background-color: #f2f2f2;
+    }
+  }
+
+  .tariffs__addition-value {
+    &--mobile-invis {
+      display: table-cell;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .tariffs__list {
+    width: 960px;
+  }
+}
