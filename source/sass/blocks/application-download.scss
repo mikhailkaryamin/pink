@@ -47,4 +47,29 @@
   .application-download__wrapper {
     width: 300px;
   }
+
+  .application-download__slogan {
+    display: block;
+    width: 200px;
+    margin-bottom: 35px;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 1.15;
+    text-align: center;
+  }
+
+  .application-download__button {
+    display: inline-block;
+    margin-bottom: 40px;
+    padding: 5px 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .application-download__container {
+    width: 960px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
 }

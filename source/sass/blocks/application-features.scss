@@ -15,6 +15,8 @@
 
 .application-features__list {
   position: relative;
+  display: flex;
+  flex-direction: column;
   padding-bottom: 280px;
   padding-left: 0;
   list-style: none;
@@ -26,7 +28,7 @@
     left: calc(50% - 80px);
     width: 160px;
     height: 270px;
-    background-image: url("/img/application-features-bg.jpg");
+    background-image: url("/img/application-features__list-bg-mobile.jpg");
     background-repeat: no-repeat;
   }
 }
@@ -52,12 +54,61 @@
   }
 
   .application-features__list {
-    width: 50%;
-    margin-left: auto;
+    width: calc(50% + 310px);
+    min-height: 484px;
+    padding-top: 80px;
     padding-bottom: 0;
+    padding-left: 310px;
 
     &::before {
       left: 0;
+      width: 268px;
+      height: 484px;
+      background-image: url("/img/application-features__list-bg-tablet.png");
     }
+  }
+
+  .application-features__item {
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .application-features__wrapper {
+    width: 960px;
+  }
+
+  .application-features__slogan {
+    display: inline-block;
+    width: 760px;
+    font-size: 50px;
+    line-height: 1.15;
+  }
+
+  .application-features__list {
+    flex-direction: row;
+    width: 960px;
+    padding: 0;
+    padding-top: 365px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .application-features__item {
+    width: 275px;
+    margin-right: 58px;
+    text-align: center;
+  }
+
+  .application-features__item-headline {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .application-features__item-text {
+    font-size: 18px;
+    line-height: 30px;
   }
 }

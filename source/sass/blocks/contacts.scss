@@ -10,6 +10,7 @@
 .contacts__list {
   display: flex;
   flex-direction: column;
+  padding-left: 0;
   list-style: none;
 }
 
@@ -28,4 +29,47 @@
   color: #d22856;
   font-size: 24px;
   font-weight: 300;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__wrapper {
+    width: 660px;
+    margin: 0 auto;
+  }
+
+  .contacts__text {
+    font-size: 40px;
+    line-height: 1.15;
+  }
+
+  .contacts__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .contacts__item {
+    &--call,
+    &--write {
+      width: 50%;
+    }
+
+    &--address {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__wrapper {
+    width: 960px;
+  }
+
+  .contacts__text {
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  .contacts__item {
+    width: 33%;
+  }
 }
