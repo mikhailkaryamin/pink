@@ -36,8 +36,46 @@
 }
 
 .form__button-submit {
-
   border: none;
   border-radius: 2px;
   background-color: #2aab6d;
+}
+
+@media (min-width: $desktop-width) {
+  .form__about-travel {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .form__container {
+    padding-right: 10px;
+    padding-left: 10px;
+
+    &--full-name,
+    &--specify-os {
+      order: 1;
+      width: 480px;
+    }
+
+    &--contacts {
+      order: 2;
+    }
+
+    &--achievements {
+      order: 3;
+    }
+
+    &--description-of-emotions {
+      order: 4;
+    }
+
+    &--button {
+      flex-direction: row;
+      order: 5;
+    }
+
+    &--full-width {
+      width: 960px;
+    }
+  }
 }
