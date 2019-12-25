@@ -74,3 +74,58 @@
 .user-photos__photo-img {
   display: block;
 }
+
+@media (min-width: $tablet-width) {
+  .user-photos__comment {
+    width: 300px;
+
+    &--main {
+      width: 620px;
+      margin: 0 auto;
+    }
+  }
+
+  .user-photos__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .user-photos__item {
+    width: 300px;
+    margin-right: 20px;
+
+    &:nth-child(even) {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-photos__text {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  .user-photos__comment {
+    &--main {
+      width: 940px;
+    }
+  }
+
+  .user-photos__item {
+    &:nth-child(even) {
+      margin-right: 20px;
+    }
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+
+  .user-photos__list {
+    width: 960px;
+    margin: 0 auto;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
