@@ -4,12 +4,44 @@
   min-height: 260px;
 }
 
-.main-nav__toggle {
-  display: none;
-}
-
 .main-nav__wrapper {
   width: 100%;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 21px;
+  right: 19px;
+  display: block;
+  width: 21px;
+  height: 21px;
+  padding: 0;
+  border: none;
+  background: rgba(40, 54, 69, 0);
+  cursor: pointer;
+}
+
+.main-nav--opened .main-nav__toggle {
+  position: absolute;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
 }
 
 @media (min-width: $desktop-width) {

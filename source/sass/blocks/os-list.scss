@@ -9,5 +9,33 @@
 .os-list__item {
   width: 47px;
   height: 56px;
-  background-color: #ffffff;
+
+  &:first-of-type {
+    margin-right: 26px;
+  }
+
+  &:last-of-type {
+    margin-left: 26px;
+  }
+}
+
+.os-list__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+
+  &--ios {
+    background-image: url("/img/os-list__apple-mobile.svg");
+  }
+
+  &--android {
+    background-image: url("/img/os-list__android-mobile.svg");
+    background-position-y: 7px;
+  }
+
+  &--wp {
+    background-image: url("/img/os-list__wp-mobile.svg");
+    background-position-y: 10px;
+  }
 }

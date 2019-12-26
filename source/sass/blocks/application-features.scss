@@ -1,40 +1,71 @@
-.application-features {
-  background-color: #ffffff;
-}
-
 .application-features__wrapper {
-  padding-right: 20px;
-  padding-left: 20px;
+  position: relative;
+  padding: 20px;
+  background-color: #f2f2f2;
+  overflow: hidden;
+
+  &--slogan {
+    background-color: #ffffff;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -160px;
+      left: 0;
+      transform: rotate(-5deg);
+      width: 120vw;
+      height: 200px;
+      background-color: #f2f2f2;
+
+    }
+  }
 }
 
 .application-features__slogan {
+  position: relative;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  min-height: 250px;
+  padding-top: 20px;
+  padding-right: 5px;
+  padding-bottom: 30px;
+  padding-left: 5px;
   font-size: 24px;
   font-weight: 300;
   text-align: center;
+}
+
+.application-features__slogan-question {
+  margin-bottom: 20px;
 }
 
 .application-features__list {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding-bottom: 280px;
   padding-left: 0;
   list-style: none;
-
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: calc(50% - 80px);
-    width: 160px;
-    height: 270px;
-    background-image: url("/img/application-features__list-bg-mobile.jpg");
-    background-repeat: no-repeat;
-  }
 }
 
 .application-features__item {
+  padding: 5px;
   text-align: center;
+
+  &--new-friends {
+    padding-bottom: 257px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -33px;
+      left: calc(50% - 80px);
+      width: 160px;
+      height: 270px;
+      background-image: url("/img/application-features__list-bg-mobile.png");
+      background-repeat: no-repeat;
+    }
+  }
 }
 
 .application-features__item-headline {
@@ -44,7 +75,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .application-features__wrapper {
+  .application-features {
     width: 660px;
     margin: 0 auto;
   }
@@ -74,7 +105,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .application-features__wrapper {
+  .application-features {
     width: 960px;
   }
 
