@@ -18,9 +18,11 @@
         <img class="page-header__logo-image" src="/img/page-header__logotype-mobile.png" width="75" height="22"
           alt="Pink - Фотоприложение">
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--opened">
         <button class="main-nav__toggle">
-          Открыть меню
+          <span class="visually-hidden">
+            Открыть меню
+          </span>
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
@@ -57,53 +59,56 @@
       <h2 class="visually-hidden">
         Загрузка приложения Pink
       </h2>
-      <div class="application-download__container">
-        <div class="application-download__wrapper">
-          <strong class="application-download__slogan">
-            Взгляните на жизнь иначе!
-          </strong>
-          <a href="https://www.apple.com/ru/itunes/" class="application-download__button">
-            Скачать приложение
-          </a>
-          <ul class="application-download__list os-list">
-            <li class="os-list__item">
-              <a href="https://www.apple.com/ru/itunes/" class="os-list__link os-list__link--ios">
-                <span class="visually-hidden">
-                  iOS
-                </span>
-              </a>
-            </li>
-            <li class="os-list__item">
-              <a href="https://play.google.com/store" class="os-list__link os-list__link--android">
-                <span class="visually-hidden">
-                  Android
-                </span>
-              </a>
-            </li>
-            <li class="os-list__item">
-              <a href="https://www.microsoft.com/ru-ru/store/apps/windows-phone"
-                class="os-list__link os-list__link--wp">
-                <span class="visually-hidden">
-                  Windows Phone
-                </span>
-              </a>
-            </li>
-          </ul>
-          <p class="application-download__text">
-            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-          </p>
-        </div>
+      <div class="application-download__wrapper">
+        <strong class="application-download__slogan">
+          Взгляните на жизнь иначе!
+        </strong>
+        <a href="https://www.apple.com/ru/itunes/" class="application-download__button">
+          Скачать приложение
+        </a>
+        <ul class="application-download__list os-list">
+          <li class="os-list__item">
+            <a href="https://www.apple.com/ru/itunes/" class="os-list__link os-list__link--ios">
+              <span class="visually-hidden">
+                iOS
+              </span>
+            </a>
+          </li>
+          <li class="os-list__item">
+            <a href="https://play.google.com/store" class="os-list__link os-list__link--android">
+              <span class="visually-hidden">
+                Android
+              </span>
+            </a>
+          </li>
+          <li class="os-list__item">
+            <a href="https://www.microsoft.com/ru-ru/store/apps/windows-phone" class="os-list__link os-list__link--wp">
+              <span class="visually-hidden">
+                Windows Phone
+              </span>
+            </a>
+          </li>
+        </ul>
+        <p class="application-download__text">
+          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+        </p>
       </div>
-
     </section>
     <section class="application-features">
       <h2 class="visually-hidden">
         Характеристики приложения Pink
       </h2>
-      <div class="application-features__wrapper">
+      <div class="application-features__wrapper application-features__wrapper--slogan">
         <strong class="application-features__slogan">
-          Устали от серости мегаполиса? Нам есть, что вам предложить!
+          <span class="application-features__slogan-question">
+            Устали от серости мегаполиса?
+          </span>
+          <span class="application-features__slogan-answer">
+            Нам есть, что вам предложить!
+          </span>
         </strong>
+      </div>
+      <div class="application-features__wrapper">
         <ul class="application-features__list">
           <li class="application-features__item">
             <b class="application-features__item-headline">
@@ -121,7 +126,7 @@
               Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
             </p>
           </li>
-          <li class="application-features__item">
+          <li class="application-features__item application-features__item--new-friends">
             <b class="application-features__item-headline">
               Заводит новых друзей
             </b>
@@ -130,69 +135,67 @@
             </p>
           </li>
         </ul>
-        <p class="application-features__research research-application">
-          <strong class="research-application__description">
-            Эффект на 24 часа!
-          </strong>
-          <span class="research-application__text">
-            Британские ученые провели исследования и доказали,
-            что положительный эффект от использования приложения длится целые сутки!
-          </span>
-          <a href="#" class="research-application__link">
-            Узнать больше об исследовании
-          </a>
-        </p>
       </div>
+      <p class="application-features__research research-application">
+        <strong class="research-application__description">
+          Эффект на 24 часа!
+        </strong>
+        <span class="research-application__text">
+          Британские ученые провели исследования и доказали,
+          что положительный эффект от использования приложения длится целые сутки!
+        </span>
+        <a href="#" class="research-application__link">
+          Узнать больше об исследовании
+        </a>
+      </p>
     </section>
     <section class="reviews">
-      <div class="reviews__wrapper">
-        <h2 class="reviews__headline">
-          Отзывы о приложение
-        </h2>
-        <button class="reviews__button-previous button-review button-review--prev" type="button">
-          Предыдущий отзыв
-        </button>
-        <blockquote class="reviews__item">
-          <p class="reviews__item-text">
-            «Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-            привычные серые вещи! А еще я познакомился со своей будущей женой в
-            комментариях к выложенной фотографии!»
-          </p>
-          <cite class="reviews__item-name-author">
-            Николай Петров
-          </cite>
-          <p class="reviews__item-about-author">
-            25 лет, водитель трамвая
-          </p>
-        </blockquote>
-        <button class="reviews__button-next button-review button-review--next" type="button">
-          Следующий отзыв
-        </button>
-        <div class="bread-crumbs">
-          <ul class="bread-crumbs__list">
-            <li class="bread-crumbs__item">
-              <a href="#" class="bread-crumbs__link">
-                <span class="visually-hidden">
-                  1-ый
-                </span>
-              </a>
-            </li>
-            <li class="bread-crumbs__item">
-              <a href="#" class="bread-crumbs__link">
-                <span class="visually-hidden">
-                  2-ой
-                </span>
-              </a>
-            </li>
-            <li class="bread-crumbs__item">
-              <a href="#" class="bread-crumbs__link">
-                <span class="visually-hidden">
-                  3-ий
-                </span>
-              </a>
-            </li>
-          </ul>
-        </div>
+      <h2 class="reviews__headline">
+        Отзывы о приложение
+      </h2>
+      <button class="reviews__button-previous button-review button-review--prev" type="button">
+        Предыдущий отзыв
+      </button>
+      <blockquote class="reviews__item">
+        <p class="reviews__item-text">
+          «Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+          привычные серые вещи! А еще я познакомился со своей будущей женой в
+          комментариях к выложенной фотографии!»
+        </p>
+        <cite class="reviews__item-name-author">
+          Николай Петров
+        </cite>
+        <p class="reviews__item-about-author">
+          25 лет, водитель трамвая
+        </p>
+      </blockquote>
+      <button class="reviews__button-next button-review button-review--next" type="button">
+        Следующий отзыв
+      </button>
+      <div class="bread-crumbs">
+        <ul class="bread-crumbs__list">
+          <li class="bread-crumbs__item">
+            <a href="#" class="bread-crumbs__link">
+              <span class="visually-hidden">
+                1-ый
+              </span>
+            </a>
+          </li>
+          <li class="bread-crumbs__item">
+            <a href="#" class="bread-crumbs__link">
+              <span class="visually-hidden">
+                2-ой
+              </span>
+            </a>
+          </li>
+          <li class="bread-crumbs__item">
+            <a href="#" class="bread-crumbs__link">
+              <span class="visually-hidden">
+                3-ий
+              </span>
+            </a>
+          </li>
+        </ul>
       </div>
     </section>
     <section class="tariffs">

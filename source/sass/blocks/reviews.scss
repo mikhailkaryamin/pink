@@ -1,4 +1,4 @@
-.reviews__wrapper {
+.reviews {
   padding-right: 30px;
   padding-left: 30px;
 }
@@ -31,7 +31,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .reviews__wrapper {
+  .reviews {
     width: 660px;
     margin: 0 auto;
   }
@@ -46,7 +46,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .reviews__wrapper {
+  .reviews {
     width: 960px;
     margin: 0 auto;
   }
