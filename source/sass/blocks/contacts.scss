@@ -37,15 +37,20 @@
   .contacts__wrapper {
     width: 660px;
     margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   .contacts__text {
+    width: 375px;
+    margin: 0 auto;
     font-size: 40px;
     line-height: 1.15;
   }
 
   .contacts__list {
     flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
   }
 
@@ -56,7 +61,8 @@
     }
 
     &--address {
-      width: 100%;
+      width: 230px;
+      margin-top: 50px;
     }
   }
 }

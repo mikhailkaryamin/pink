@@ -60,38 +60,42 @@
         Загрузка приложения Pink
       </h2>
       <div class="application-download__wrapper">
-        <strong class="application-download__slogan">
-          Взгляните на жизнь иначе!
-        </strong>
-        <a href="https://www.apple.com/ru/itunes/" class="application-download__button">
-          Скачать приложение
-        </a>
-        <ul class="application-download__list os-list">
-          <li class="os-list__item">
-            <a href="https://www.apple.com/ru/itunes/" class="os-list__link os-list__link--ios">
-              <span class="visually-hidden">
-                iOS
-              </span>
-            </a>
-          </li>
-          <li class="os-list__item">
-            <a href="https://play.google.com/store" class="os-list__link os-list__link--android">
-              <span class="visually-hidden">
-                Android
-              </span>
-            </a>
-          </li>
-          <li class="os-list__item">
-            <a href="https://www.microsoft.com/ru-ru/store/apps/windows-phone" class="os-list__link os-list__link--wp">
-              <span class="visually-hidden">
-                Windows Phone
-              </span>
-            </a>
-          </li>
-        </ul>
-        <p class="application-download__text">
-          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-        </p>
+        <div class="application-download__container">
+          <strong class="application-download__slogan">
+            Взгляните на жизнь иначе!
+          </strong>
+          <a href="https://www.apple.com/ru/itunes/" class="application-download__button">
+            Скачать приложение
+          </a>
+          <ul class="application-download__list os-list">
+            <li class="os-list__item">
+              <a href="https://www.apple.com/ru/itunes/" class="os-list__link os-list__link--ios">
+                <span class="visually-hidden">
+                  iOS
+                </span>
+              </a>
+            </li>
+            <li class="os-list__item">
+              <a href="https://play.google.com/store" class="os-list__link os-list__link--android">
+                <span class="visually-hidden">
+                  Android
+                </span>
+              </a>
+            </li>
+            <li class="os-list__item">
+              <a href="https://www.microsoft.com/ru-ru/store/apps/windows-phone"
+                class="os-list__link os-list__link--wp">
+                <span class="visually-hidden">
+                  Windows Phone
+                </span>
+              </a>
+            </li>
+          </ul>
+          <p class="application-download__text">
+            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+          </p>
+        </div>
+
       </div>
     </section>
     <section class="application-features">
@@ -137,16 +141,19 @@
         </ul>
       </div>
       <p class="application-features__research research-application">
-        <strong class="research-application__description">
-          Эффект на 24 часа!
-        </strong>
-        <span class="research-application__text">
-          Британские ученые провели исследования и доказали,
-          что положительный эффект от использования приложения длится целые сутки!
+        <span class="research-application__container">
+          <strong class="research-application__description">
+            Эффект <br> на 24 часа!
+          </strong>
+          <span class="research-application__text">
+            Британские ученые провели исследования и доказали,
+            что положительный эффект от использования приложения длится целые сутки!
+          </span>
+          <a href="#" class="research-application__link">
+            Узнать больше об исследовании
+          </a>
         </span>
-        <a href="#" class="research-application__link">
-          Узнать больше об исследовании
-        </a>
+
       </p>
     </section>
     <section class="reviews">
@@ -255,7 +262,8 @@
           <td class="tariffs__addition">
             Смайлики
           </td>
-          <td class="tariffs__addition-value tariffs__addition-value--not-includes tariffs__addition-value--mobile-invis">
+          <td
+            class="tariffs__addition-value tariffs__addition-value--not-includes tariffs__addition-value--mobile-invis">
             <span class="visually-hidden">
               Нет включено в тарифе
             </span>
@@ -275,7 +283,8 @@
           <td class="tariffs__addition">
             Комментарии
           </td>
-          <td class="tariffs__addition-value tariffs__addition-value--not-includes tariffs__addition-value--mobile-invis">
+          <td
+            class="tariffs__addition-value tariffs__addition-value--not-includes tariffs__addition-value--mobile-invis">
             <span class="visually-hidden">
               Нет включено в тарифе
             </span>
@@ -363,31 +372,25 @@
     </section>
   </main>
   <footer class="page-footer page-footer--main-mobile">
-    <div class="page-footer__wrapper">
+    <div class="page-footer__container">
       <a href="#" class="page-footer__logo">
-        <img class="page-footer__logo-img" src="/img/page-footer__logotype-tablet.png" width="147" height="40"
+        <img class="page-footer__logo-img" src="/img/page-footer__logotype-mobile.png" width="147" height="40"
           alt="Логотип Pink">
       </a>
       <ul class="page-footer__social-list social-list">
         <li class="social-list__item">
           <a class="social-list__twitter" href="http://twitter.com">
-            <span class="visually-hidden">
-              Twitter
-            </span>
+            Twitter
           </a>
         </li>
         <li class="social-list__item">
           <a class="social-list__facebook" href="http://facebook.com">
-            <span class="visually-hidden">
-              Facebook
-            </span>
+            Facebook
           </a>
         </li>
         <li class="social-list__item">
           <a class="social-list__youtube" href="http://youtube.com">
-            <span class="visually-hidden">
-              Youtube
-            </span>
+            Youtube
           </a>
         </li>
       </ul>
@@ -404,6 +407,7 @@
         </a>
       </div>
     </div>
+  </div>
   </footer>
 </body>
 

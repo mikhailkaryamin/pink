@@ -75,8 +75,14 @@
 
 @media (min-width: $tablet-width) {
   .application-features {
-    width: 660px;
+    min-width: 660px;
     margin: 0 auto;
+  }
+
+  .application-features__wrapper {
+    &::after {
+      bottom: -134px;
+    }
   }
 
   .application-features__slogan {
@@ -99,7 +105,15 @@
   }
 
   .application-features__item {
+    padding-bottom: 0;
     text-align: left;
+
+    &::before {
+      left: 0;
+      width: 267px;
+      height: 485px;
+      background-image: url("/img/application-features__list-bg-tablet.png");
+    }
   }
 }
 
