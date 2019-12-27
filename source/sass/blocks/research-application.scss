@@ -6,18 +6,27 @@
   .research-application {
     position: relative;
     display: flex;
-    flex-direction: column;
     min-height: 276px;
-    padding-left: 310px;
+    margin: 0;
+    padding-top: 60px;
+    padding-bottom: 100px;
+    padding-left: 305px;
 
     &::before {
       content: "";
       position: absolute;
-      left: 0;
+      left: 20px;
       width: 238px;
       height: 276px;
       background-image: url("/img/research-application-watch-tablet.png");
     }
+  }
+
+  .research-application__container {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    padding-top: 35px;
   }
 
   .research-application__description {
@@ -27,5 +36,6 @@
 
   .research-application__link {
     color: #d22856;
+    text-decoration: underline;
   }
 }

@@ -128,13 +128,18 @@
 }
 
 @media (min-width: $tablet-width) {
+  .tariffs {
+    padding-bottom: 70px;
+  }
+
   .tariffs__list {
     width: 620px;
     margin: 0 auto;
   }
 
   .tariffs__description {
-    width: 150px;
+    min-height: 79px;
+    padding-top: 12px;
 
     &--mobile-invis {
       display: table-cell;
@@ -143,12 +148,44 @@
     &--none {
       background-color: #f2f2f2;
     }
+
+    &--hit {
+      &::before {
+        top: 6px;
+        left: -32px;
+      }
+    }
+  }
+
+  .tariffs__name {
+    font-size: 16px;
+  }
+
+  .tariffs__cost {
+    font-size: 18px;
+  }
+
+  .tariffs__addition {
+    min-height: 50px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    text-transform: none;
   }
 
   .tariffs__addition-value {
+    width: 155px;
+
     &--mobile-invis {
-      display: table-cell;
+      display: flex;
     }
+
+    &::before {
+      left: 65px;
+    }
+  }
+
+  .tariffs__bread-crumbs {
+    display: none;
   }
 }
 

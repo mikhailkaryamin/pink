@@ -62,19 +62,34 @@
 
 @media (min-width: $tablet-width) {
   .application-download {
-    width: 620px;
     min-height: 620px;
-    margin: 0 auto;
     padding-top: 0;
+    background-image: url("/img/application-download__bg-tablet.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &::before {
+      display: none;
+    }
   }
 
   .application-download__wrapper {
+    display: flex;
+    justify-content: flex-start;
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  .application-download__container {
     width: 300px;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 
   .application-download__slogan {
     display: block;
     width: 200px;
+    margin: 0 auto;
     margin-bottom: 35px;
     color: #ffffff;
     font-size: 40px;
@@ -86,7 +101,7 @@
   .application-download__button {
     display: inline-block;
     margin-bottom: 40px;
-    padding: 5px 30px;
+    padding: 14px 30px;
   }
 }
 
