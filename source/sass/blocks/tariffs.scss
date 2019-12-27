@@ -1,14 +1,61 @@
 .tariffs {
+  position: relative;
+  padding-top: 135px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+  padding-left: 20px;
   background-color: #f2f2f2;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -160px;
+    left: -50px;
+    transform: rotate(-5deg);
+    width: 120vw;
+    height: 200px;
+    background-color: #ffffff;
+  }
+}
+
+.tariffs__list {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tariffs__list tr {
+  display: flex;
 }
 
 .tariffs__description {
-  width: 100%;
+  flex: 1;
+  min-height: 100px;
+  padding: 5px;
   text-align: center;
+  border-right: 2px solid #f2f2f2;
+  border-left: 2px solid #f2f2f2;
   background-color: #283645;
 
   &--mobile-invis {
     display: none;
+  }
+
+  &--hit {
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: "ХИТ";
+      position: absolute;
+      top: 10px;
+      left: -30px;
+      transform: rotate(-45deg);
+      width: 100px;
+      height: 30px;
+      color: #ffffff;
+      background-color: #d22856;
+    }
   }
 }
 
@@ -21,6 +68,7 @@
 }
 
 .tariffs__cost {
+  margin: 0;
   color: #ffffff;
   font-size: 24px;
   font-weight: 300;
@@ -28,16 +76,54 @@
 }
 
 .tariffs__addition {
+  flex: 1;
+  min-height: 60px;
+  padding-top: 14px;
+  padding-right: 5px;
+  padding-bottom: 14px;
+  padding-left: 24px;
   line-height: 30px;
   text-transform: uppercase;
+  border-top: 1px solid #f2f2f2;
+  border-right: 2px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+  border-left: 2px solid #f2f2f2;
+  background-color: #ffffff;
 }
 
 .tariffs__addition-value {
+  position: relative;
   width: 70px;
-  background-color: tomato;
+  border: 1px solid #f2f2f2;
+  background-color: #ffffff;
 
   &--mobile-invis {
     display: none;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    display: block;
+    background-repeat: no-repeat;
+  }
+
+  &--includes {
+    &::before {
+      width: 31px;
+      height: 21px;
+      background-image: url("/img/tarrifs-ok.svg");
+    }
+  }
+
+  &--not-includes {
+    &::before {
+      width: 27px;
+      height: 26px;
+      background-image: url("/img/tarrifs-no.svg");
+    }
   }
 }
 
