@@ -6,9 +6,14 @@
 
 @media (min-width: $tablet-width) {
   .social-list__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 51px;
+    height: 51px;
     margin-right: 5px;
-    background-color: tomato;
+    border: 3px solid #e9ebec;
+    border-radius: 27px;
 
     &:last-child {
       margin-right: 0;
