@@ -12,6 +12,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-header {
+    background-color: #1c232b;
+  }
+
   .page-header__wrapper {
     display: flex;
     width: 960px;
@@ -19,7 +23,12 @@
   }
 
   .page-header__logo {
+    position: relative;
+    z-index: 200;
     width: 147px;
     height: 40px;
+    padding-top: 43px;
+    padding-bottom: 43px;
   }
 }
+
