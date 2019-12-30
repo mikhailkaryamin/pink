@@ -48,22 +48,47 @@
   .reviews__item-name-author {
     margin: 0;
     color: #000000;
+    font-size: 20px;
   }
 
   .reviews__item-about-author {
     display: block;
     margin: 0;
+    line-height: 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .reviews {
+    display: flex;
+    align-items: center;
     width: 960px;
     margin: 0 auto;
   }
 
   .reviews__item {
+    position: relative;
     width: 720px;
     margin: 0 auto;
+    padding-top: 180px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 70px;
+      left: calc(50% - 39.5px);
+      display: block;
+      width: 79px;
+      height: 65px;
+      background-image: url("/img/reviews__quotes-desktop.svg");
+    }
+  }
+
+  .reviews__item-name-author {
+    font-size: 24px;
+  }
+
+  .reviews__item-about-author {
+    font-size: 18px;
   }
 }

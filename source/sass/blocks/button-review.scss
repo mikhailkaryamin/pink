@@ -1,3 +1,19 @@
 .button-review {
   display: none;
 }
+
+@media (min-width: $desktop-width) {
+  .button-review {
+    display: block;
+    width: 22px;
+    height: 41px;
+    border: none;
+    background: transparent;
+    background-image: url("/img/reviews__arrow.svg");
+    opacity: 0.3;
+
+    &--next {
+      transform: rotate(180deg);
+    }
+  }
+}

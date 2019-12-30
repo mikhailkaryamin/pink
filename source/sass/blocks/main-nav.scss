@@ -1,4 +1,6 @@
 .main-nav {
+  position: relative;
+  z-index: 200;
   display: flex;
   flex-wrap: wrap;
   min-height: 260px;
@@ -47,5 +49,9 @@
 @media (min-width: $desktop-width) {
   .main-nav {
     min-height: 100px;
+  }
+
+  .main-nav__toggle {
+    display: none;
   }
 }

@@ -75,9 +75,28 @@
   .contacts__text {
     width: 500px;
     margin: 0 auto;
+    margin-bottom: 45px;
+    font-size: 50px;
   }
 
   .contacts__item {
     width: 33%;
+
+    &--call {
+      order: 1;
+    }
+
+    &--address {
+      order: 2;
+      margin-top: 0;
+    }
+
+    &--write {
+      order: 3;
+    }
+  }
+
+  .contacts__type {
+    margin-bottom: 20px;
   }
 }
