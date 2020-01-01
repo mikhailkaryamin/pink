@@ -3,8 +3,11 @@
 }
 
 .upload-photo__wrapper {
-  padding-right: 20px;
-  padding-left: 20px;
+  padding: 20px;
+}
+
+.upload-photo__image {
+  display: block;
 }
 
 .upload-photo__text {
@@ -19,8 +22,9 @@
   justify-content: space-between;
   width: 280px;
   margin: 0 auto;
-  padding: 0;
+  padding-top: 40px;
   padding-right: 45px;
+  padding-bottom: 19px;
   padding-left: 35px;
   list-style: none;
 }
@@ -30,22 +34,100 @@
   flex-direction: column;
 }
 
-.upload-photo__tool {
+.upload-photo__item-filter {
+  position: relative;
   display: block;
   width: 50px;
   height: 45px;
-  background-color: tomato;
+}
+
+.upload-photo__tool {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 45px;
+
+  &::before {
+    content: "";
+    position: absolute;
+  }
+
+  &--crop {
+    &::before {
+      width: 44px;
+      height: 44px;
+      background-image: url("/img/upload-photo-crop.svg");
+    }
+  }
+
+  &--fill {
+    &::before {
+      width: 48px;
+      height: 43px;
+      background-image: url("/img/upload-photo-fill.svg");
+    }
+  }
+
+  &--contrast {
+    &::before {
+      width: 32px;
+      height: 32px;
+      background-image: url("/img/upload-photo-contrast.svg");
+    }
+  }
+}
+
+.upload-photo__slider {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 280px;
+  height: 14px;
+  padding-top: 10px;
+  padding-right: 22px;
+  padding-bottom: 35px;
+  padding-left: 19px;
+}
+
+.upload-photo__slider-bar {
+  display: block;
+  width: 243px;
+  height: 2px;
+  background-color: #000000;
+}
+
+.upload-photo__slider-button {
+  position: absolute;
+  top: 4px;
+  right: 70px;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #d22856;
+  border-radius: 7px;
+  background: #ffffff;
 }
 
 .user-photo__container-button {
+  position: relative;
   display: flex;
   flex-direction: column;
+  padding-top: 38px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 100vw;
+    height: 1px;
+    background-color: #dddfe0;
+  }
 }
 
 .upload-photo__button {
   margin-bottom: 10px;
-  padding-top: 17px;
-  padding-bottom: 17px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   color: #d22856;
   font-size: 18px;
   font-weight: 700;
@@ -57,6 +139,12 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  &--cancel {
+    color: #283645;
+    border-color: #283645;
+    opacity: 0.1;
   }
 }
 
