@@ -1252,7 +1252,9 @@ a {
 
 .page-footer__container {
   width: 180px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-top: 39px;
+  padding-bottom: 39px; }
 
 @media (min-width: 660px) {
   .page-footer--main-mobile {
@@ -1287,24 +1289,23 @@ a {
   padding-left: 0;
   list-style: none; }
 
-@media (min-width: 660px) {
-  .social-list__item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 51px;
-    height: 51px;
-    margin-right: 5px;
-    border: 3px solid #e9ebec;
-    border-radius: 27px; }
-    .social-list__item:last-child {
-      margin-right: 0; } }
+.social-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 51px;
+  height: 51px;
+  margin-right: 5px;
+  border: 3px solid #e9ebec;
+  border-radius: 27px; }
+  .social-list__item:last-child {
+    margin-right: 0; }
 
 .copyright {
   display: -webkit-box;
@@ -1322,10 +1323,17 @@ a {
   background-repeat: no-repeat; }
 
 .inner-main__headline {
+  height: 173px;
+  margin: 0;
+  padding-top: 30px;
   color: #ffffff;
   font-size: 24px;
   font-weight: 300;
-  text-align: center; }
+  text-align: center;
+  background-color: #2d3a4b;
+  background-image: url("/img/inner-main-bc.jpg");
+  background-repeat: no-repeat;
+  background-position-y: -67px; }
 
 .user-photos {
   display: -webkit-box;
@@ -1336,17 +1344,30 @@ a {
       -ms-flex-direction: column;
           flex-direction: column; }
 
+.user-photos__headline {
+  height: 175px;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 300;
+  background-color: #2d3a4b; }
+
 .user-photos__text {
-  padding-right: 30px;
-  padding-left: 30px; }
+  padding-top: 10px;
+  padding-right: 35px;
+  padding-bottom: 10px;
+  padding-left: 35px;
+  text-align: center; }
 
 .user-photos__photo-of-the-day {
-  position: relative; }
+  position: relative;
+  margin-bottom: 20px; }
 
 .user-photos__headline-photo-of-the-day {
   position: absolute;
+  top: 0;
   left: 50%;
-  padding: 12px 16px;
+  margin: 0;
+  padding: 6px 19px;
   color: #ffffff;
   font-size: 12px;
   background-color: #d22856; }
@@ -1359,10 +1380,12 @@ a {
   width: 100%; }
 
 .user-photos__comment {
-  width: 280px;
   margin: 0;
   padding: 20px;
   background-color: #f2f2f2; }
+  .user-photos__comment--main {
+    width: 280px;
+    margin: 0 auto; }
 
 .user-photos__name-time {
   display: -webkit-box;
@@ -1381,10 +1404,19 @@ a {
   text-transform: uppercase; }
 
 .user-photos__numbers-of-likes {
+  position: relative;
   padding-left: 32px;
   color: #d22856;
   font-size: 12px;
   text-transform: uppercase; }
+  .user-photos__numbers-of-likes::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 13px;
+    height: 12px;
+    background-image: url("/img/user-photos__like.svg"); }
 
 .user-photos__list {
   display: -webkit-box;
@@ -1399,6 +1431,13 @@ a {
   padding-right: 20px;
   padding-left: 20px;
   list-style: none; }
+
+.user-photos__item {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 20px; }
+  .user-photos__item:last-child {
+    margin-bottom: 0; }
 
 .user-photos__photo-img {
   display: block; }
@@ -1442,8 +1481,10 @@ a {
   background-color: #f2f2f2; }
 
 .upload-photo__wrapper {
-  padding-right: 20px;
-  padding-left: 20px; }
+  padding: 20px; }
+
+.upload-photo__image {
+  display: block; }
 
 .upload-photo__text {
   margin: 0;
@@ -1460,8 +1501,9 @@ a {
           justify-content: space-between;
   width: 280px;
   margin: 0 auto;
-  padding: 0;
+  padding-top: 40px;
   padding-right: 45px;
+  padding-bottom: 19px;
   padding-left: 35px;
   list-style: none; }
 
@@ -1474,25 +1516,87 @@ a {
       -ms-flex-direction: column;
           flex-direction: column; }
 
-.upload-photo__tool {
+.upload-photo__item-filter {
+  position: relative;
   display: block;
   width: 50px;
-  height: 45px;
-  background-color: tomato; }
+  height: 45px; }
+
+.upload-photo__tool {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 45px; }
+  .upload-photo__tool::before {
+    content: "";
+    position: absolute; }
+  .upload-photo__tool--crop::before {
+    width: 44px;
+    height: 44px;
+    background-image: url("/img/upload-photo-crop.svg"); }
+  .upload-photo__tool--fill::before {
+    width: 48px;
+    height: 43px;
+    background-image: url("/img/upload-photo-fill.svg"); }
+  .upload-photo__tool--contrast::before {
+    width: 32px;
+    height: 32px;
+    background-image: url("/img/upload-photo-contrast.svg"); }
+
+.upload-photo__slider {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 280px;
+  height: 14px;
+  padding-top: 10px;
+  padding-right: 22px;
+  padding-bottom: 35px;
+  padding-left: 19px; }
+
+.upload-photo__slider-bar {
+  display: block;
+  width: 243px;
+  height: 2px;
+  background-color: #000000; }
+
+.upload-photo__slider-button {
+  position: absolute;
+  top: 4px;
+  right: 70px;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #d22856;
+  border-radius: 7px;
+  background: #ffffff; }
 
 .user-photo__container-button {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  padding-top: 38px; }
+  .user-photo__container-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 100vw;
+    height: 1px;
+    background-color: #dddfe0; }
 
 .upload-photo__button {
   margin-bottom: 10px;
-  padding-top: 17px;
-  padding-bottom: 17px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   color: #d22856;
   font-size: 18px;
   font-weight: 700;
@@ -1503,6 +1607,10 @@ a {
   cursor: pointer; }
   .upload-photo__button:last-child {
     margin-bottom: 0; }
+  .upload-photo__button--cancel {
+    color: #283645;
+    border-color: #283645;
+    opacity: 0.1; }
 
 @media (min-width: 660px) {
   .upload-photo__wrapper {
