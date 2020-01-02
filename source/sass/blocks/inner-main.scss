@@ -4,7 +4,7 @@
 }
 
 .inner-main__headline {
-  height: 173px;
+  min-height: 173px;
   margin: 0;
   padding-top: 30px;
   color: #ffffff;
@@ -12,7 +12,17 @@
   font-weight: 300;
   text-align: center;
   background-color: #2d3a4b;
-  background-image: url("/img/inner-main-bc.jpg");
+  background-image: url("/img/inner-main-bg.jpg");
   background-repeat: no-repeat;
   background-position-y: -67px;
+}
+
+@media (min-width: $tablet-width) {
+  .inner-main__headline {
+    min-height: 334px;
+    font-size: 50px;
+    line-height: 1.15;
+    background-image: url("/img/inner-main-bg-tablet.jpg");
+    background-position-x: center;
+  }
 }
