@@ -37,6 +37,12 @@
 
 .user-photos__photo {
   display: block;
+  width: 100%;
+
+  &--main {
+    width: auto;
+    height: auto;
+  }
 }
 
 .user-photos__photo-of-the-day-img {
@@ -45,6 +51,9 @@
 }
 
 .user-photos__comment {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
   margin: 0;
   padding: 20px;
   background-color: #f2f2f2;
@@ -57,6 +66,7 @@
 
 .user-photos__name-time {
   display: flex;
+  flex: 0;
 }
 
 .user-photos__comment-author {
@@ -90,6 +100,13 @@
   }
 }
 
+.user-photos__comment-text {
+  flex: 1;
+  margin: 0;
+  padding: 5px 0;
+}
+
+
 .user-photos__list {
   display: flex;
   flex-direction: column;
@@ -110,31 +127,97 @@
   }
 }
 
+.user-photos__container-item {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 .user-photos__photo-img {
   display: block;
 }
 
 @media (min-width: $tablet-width) {
+  .user-photos__text {
+    padding: 85px 47px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .user-photos__photo-of-the-day-img {
+    min-height: 512px;
+  }
+
+  .user-photos__headline-photo-of-the-day {
+    top: 60px;
+    right: 20px;
+    left: auto;
+  }
+
   .user-photos__comment {
-    width: 300px;
+    flex-wrap: wrap;
+    width: 100%;
 
     &--main {
+      flex-direction: row;
       width: 620px;
       margin: 0 auto;
     }
   }
 
+  .user-photos__comment--main > .user-photos__name-time {
+    flex: 1;
+    order: 1;
+  }
+
+  .user-photos__numbers-of-likes {
+    padding-right: 32px;
+    padding-left: 0;
+
+    &::before {
+      right: 0;
+      left: auto;
+    }
+  }
+
+  .user-photos__comment--main > .user-photos__numbers-of-likes {
+    order: 2;
+    width: 125px;
+  }
+
+  .user-photos__comment--main > .user-photos__comment-text {
+    order: 3;
+    flex-basis: 100%;
+  }
+
   .user-photos__list {
     flex-direction: row;
     flex-wrap: wrap;
+    width: 660px;
+    margin: 0 auto;
   }
 
   .user-photos__item {
     width: 300px;
+    min-height: 455px;
     margin-right: 20px;
 
     &:nth-child(even) {
       margin-right: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 20px;
+    }
+  }
+
+  .user-photos__photo {
+    height: 300px;
+    background-color: tomato;
+
+    &--main {
+      width: auto;
+      height: auto;
     }
   }
 }
