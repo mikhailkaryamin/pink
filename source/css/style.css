@@ -348,6 +348,116 @@ a {
   color: #283645;
   text-decoration: none; }
 
+.input {
+  padding: 20px;
+  border: 2px solid #e5e5e5;
+  border-radius: 2px; }
+
+.input::-moz-placeholder {
+  color: #283645;
+  font-size: 18px;
+  line-height: 30px; }
+
+.input::-webkit-input-placeholder {
+  color: #283645;
+  font-size: 18px;
+  line-height: 30px; }
+
+.input:-ms-input-placeholder {
+  color: #283645;
+  font-size: 18px;
+  line-height: 30px; }
+
+.input::-ms-input-placeholder {
+  color: #283645;
+  font-size: 18px;
+  line-height: 30px; }
+
+.input::placeholder {
+  color: #283645;
+  font-size: 18px;
+  line-height: 30px; }
+
+.checkbox {
+  position: relative;
+  display: block;
+  padding-left: 70px;
+  font-size: 18px;
+  line-height: 30px; }
+
+.checkbox__item {
+  position: absolute;
+  width: 37px;
+  height: 37px;
+  margin-top: -0.3em;
+  margin-left: -70px;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-position: 50% 50%;
+  -webkit-box-shadow: 0 0 0 0.1em #e5e5e5;
+          box-shadow: 0 0 0 0.1em #e5e5e5; }
+
+.checkbox__input:checked + .checkbox__item {
+  background-image: url("/img/checkbox-tick.png"); }
+
+.radio {
+  position: relative;
+  display: block;
+  padding-left: 70px;
+  font-size: 18px;
+  line-height: 30px; }
+
+.radio__item {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  margin-top: -0.3em;
+  margin-left: -70px;
+  border: 2px solid #e5e5e5;
+  border-radius: 20px;
+  background-color: #ffffff; }
+
+.radio__input:checked + .radio__item::before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 7.5px);
+  left: calc(50% - 7.5px);
+  width: 15px;
+  height: 15px;
+  border-radius: 7.5px;
+  background-color: #d22856; }
+
+.textarea {
+  min-height: 200px;
+  padding: 12px 20px;
+  border: 2px solid #e5e5e5; }
+
+.textarea::-moz-placeholder {
+  color: #283645;
+  font-size: 18px;
+  line-height: 30px; }
+
+.textarea::-webkit-input-placeholder {
+  color: #283645;
+  font-size: 18px;
+  line-height: 30px; }
+
+.textarea:-ms-input-placeholder {
+  color: #283645;
+  font-size: 18px;
+  line-height: 30px; }
+
+.textarea::-ms-input-placeholder {
+  color: #283645;
+  font-size: 18px;
+  line-height: 30px; }
+
+.textarea::placeholder {
+  color: #283645;
+  font-size: 18px;
+  line-height: 30px; }
+
 .bread-crumbs {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1848,18 +1958,42 @@ a {
     .upload-photo__button:nth-child(even) {
       margin-right: 0; } }
 
-.page-main-form {
-  background-repeat: no-repeat; }
+.form__container-headline {
+  position: relative;
+  min-height: 170px;
+  padding-top: 35px;
+  padding-right: 40px;
+  padding-bottom: 50px;
+  padding-left: 40px;
+  background-color: #1d2631; }
+  .form__container-headline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: calc(50% - 160px);
+    width: 320px;
+    height: 170px;
+    background-image: url("/img/inner-main-bg.jpg");
+    background-repeat: no-repeat;
+    background-position-y: -67px; }
 
-.page-main-form__container {
-  padding: 0 20px;
-  text-align: center; }
-
-.page-main-form__competition-description {
+.form__headline {
+  position: relative;
+  margin: 0;
   color: #ffffff;
   font-size: 24px;
   font-weight: 300;
-  background-color: #2b3848; }
+  text-align: center; }
+
+.form__description {
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 55px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  line-height: 30px;
+  text-align: center; }
 
 .form__about-travel {
   display: -webkit-box;
@@ -1871,8 +2005,9 @@ a {
           flex-direction: column; }
 
 .form__container {
-  margin: 0;
-  padding: 0 20px; }
+  width: 320px;
+  margin: 0 auto;
+  padding: 20px; }
   .form__container--bg {
     background-color: #f2f2f2; }
   .form__container--description-of-emotions, .form__container--button {
@@ -1895,18 +2030,48 @@ a {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  margin-bottom: 10px; }
+  .form__item--achievements-option, .form__item--specify-os-option {
+    margin-bottom: 50px; }
 
 .form__label {
+  display: block;
   padding-left: 20px;
   color: #d22856;
   line-height: 30px;
   text-transform: uppercase; }
+  .form__label--achievements, .form__label--specify-os {
+    padding: 0 20px;
+    padding-bottom: 30px;
+    line-height: 18px;
+    text-align: center; }
+  .form__label--description-of-emotions {
+    padding: 15px;
+    text-align: center; }
 
 .form__button-submit {
+  padding: 17px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
   border: none;
   border-radius: 2px;
   background-color: #2aab6d; }
+
+.form__small-text {
+  display: block;
+  padding-top: 30px;
+  padding-right: 20px;
+  padding-left: 20px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase; }
+
+.form__small-text sup {
+  color: #d22856; }
 
 @media (min-width: 1200px) {
   .form__about-travel {

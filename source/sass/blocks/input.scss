@@ -1,0 +1,35 @@
+.input {
+  padding: 20px;
+  border: 2px solid #e5e5e5;
+  border-radius: 2px;
+}
+
+.input::-moz-placeholder {
+  color: #283645;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.input::-webkit-input-placeholder {
+  color: #283645;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.input:-ms-input-placeholder {
+  color: #283645;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.input::-ms-input-placeholder {
+  color: #283645;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.input::placeholder {
+  color: #283645;
+  font-size: 18px;
+  line-height: 30px;
+}
