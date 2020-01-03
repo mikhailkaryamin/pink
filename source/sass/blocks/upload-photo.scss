@@ -1,9 +1,11 @@
 .upload-photo__container {
+  padding: 20px;
   background-color: #f2f2f2;
 }
 
 .upload-photo__wrapper {
-  padding: 20px;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .upload-photo__image {
@@ -20,8 +22,6 @@
 .upload-photo__filter-selection {
   display: flex;
   justify-content: space-between;
-  width: 280px;
-  margin: 0 auto;
   padding-top: 40px;
   padding-right: 45px;
   padding-bottom: 19px;
@@ -37,8 +37,6 @@
 .upload-photo__item-filter {
   position: relative;
   display: block;
-  width: 50px;
-  height: 45px;
 }
 
 .upload-photo__tool {
@@ -81,7 +79,6 @@
   position: relative;
   display: flex;
   justify-content: center;
-  width: 280px;
   height: 14px;
   padding-top: 10px;
   padding-right: 22px;
@@ -122,7 +119,7 @@
     position: absolute;
     top: 0;
     left: -20px;
-    width: 100vw;
+    width: 320px;
     height: 1px;
     background-color: #dddfe0;
   }
@@ -155,7 +152,7 @@
 @media (min-width: $tablet-width) {
   .upload-photo__wrapper {
     display: flex;
-    width: 660px;
+    width: 620px;
     margin: 0 auto;
   }
 
@@ -178,21 +175,19 @@
   .upload-photo__item-filter {
     display: flex;
     align-items: center;
-    width: 275px;
     height: 73px;
     border-bottom: 1px solid #dddfe0;
   }
 
   .upload-photo__tool {
     width: 53px;
+    height: 22px;
 
     &::before {
       background-size: contain;
     }
 
     &--crop {
-      height: 22px;
-
       &::before {
         width: 22px;
         height: 22px;
@@ -200,8 +195,6 @@
     }
 
     &--fill {
-      height: 22px;
-
       &::before {
         width: 24px;
         height: 22px;
@@ -265,11 +258,13 @@
   .upload-photo__wrapper {
     width: 940px;
     margin: 0 auto;
+    padding-right: 60px;
+    padding-left: 80px;
   }
 
-  .upload-photo__image,
-  .upload-photo__filters {
-    width: 470px;
+  .upload-photo__image {
+    width: 391px;
+    padding-right: 90px;
   }
 
   .upload-photo__text {
@@ -277,8 +272,56 @@
     margin: 0 auto;
   }
 
-  .user-photo__container-button {
+  .upload-photo__filter-selection {
+    width: 410px;
+  }
+
+  .upload-photo__item-filter {
+    width: 410px;
+  }
+
+  .upload-photo__tool {
+    width: 92px;
+    height: 48px;
+
+    &--crop {
+      &::before {
+        width: 48px;
+        height: 48px;
+      }
+    }
+
+    &--fill {
+      &::before {
+        width: 48px;
+        height: 43px;
+      }
+    }
+
+    &--contrast {
+      &::before {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+
+  .upload-photo__slider-bar {
+    width: 288px;
+  }
+
+  .upload-photo__container-control {
+    display: flex;
+    flex-direction: column;
+    width: 410px;
+    padding-left: 0;
+  }
+
+  .upload-photo__container-button {
     flex-direction: row;
+    width: 100%;
+    margin-top: auto;
+    padding: 0;
   }
 
   .upload-photo__button {
