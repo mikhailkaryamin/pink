@@ -69,22 +69,22 @@
         <div class="form__container form__container--full-name">
           <ul class="form__list form__list--full-name">
             <li class="form__item form__item--name-item">
-              <label class="form__label" for="surname">
+              <label class="form__label form__label--full-name" for="surname">
                 Фамилия:
               </label>
-              <input class="input" type="text" name="surname" id="surname" placeholder="Укажите фамилию *" required>
+              <input class="form__input input" type="text" name="surname" id="surname" placeholder="Укажите фамилию *" required>
             </li>
             <li class="form__item form__item--name-item">
-              <label class="form__label" for="name">
+              <label class="form__label form__label--full-name" for="name">
                 Имя:
               </label>
-              <input class="input" type="text" name="name" id="name" placeholder="Введите ваше имя *" required>
+              <input class="form__input input" type="text" name="name" id="name" placeholder="Введите ваше имя *" required>
             </li>
             <li class="form__item form__item--name-item">
-              <label class="form__label" for="mname">
+              <label class="form__label form__label--full-name" for="mname">
                 Отчество:
               </label>
-              <input class="input" type="text" name="mname" id="mname" placeholder="Ну и отчество тоже" required>
+              <input class="form__input input" type="text" name="mname" id="mname" placeholder="Ну и отчество тоже" required>
             </li>
         </div>
         <div class="form__container form__container--bg form__container--achievements form__container--full-width">
@@ -139,18 +139,25 @@
           </ul>
         </div>
         <div class="form__container form__container--contacts form__container--full-width">
+          <span class="form__label form__label--contacts">
+            Контактная информация
+          </span>
           <ul class="form__list form__list--contacts-list">
             <li class="form__item form__item--phone-number">
-              <label class="form__label" for="number">
+              <label class="form__label form__label--contacts-list" for="number">
                 Номер телефона
               </label>
-              <input class="input" type="number" name="number" id="number" placeholder="Номер, пожалуйста">
+              <span class="form__input-contacts form__input-contacts--phone">
+                <input class="input form__input" type="number" name="number" id="number" placeholder="Номер, пожалуйста">
+              </span>
             </li>
             <li class="form__item form__item--email">
-              <label class="form__label" for="email">
-                Отчество:
+              <label class="form__label form__label--contacts-list" for="email">
+                Адрес почты
               </label>
-              <input class="input" type="email" name="email" id="email" placeholder="Введите почту *" required>
+              <span class="form__input-contacts form__input-contacts--email">
+                <input class="input form__input" type="email" name="email" id="email" placeholder="Введите почту *" required>
+              </span>
             </li>
           </ul>
         </div>
