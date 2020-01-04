@@ -21,6 +21,10 @@
   border: none;
   background: rgba(40, 54, 69, 0);
   cursor: pointer;
+
+  &--nojs {
+    display: none;
+  }
 }
 
 .main-nav--opened .main-nav__toggle {
