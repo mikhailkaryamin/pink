@@ -11,6 +11,13 @@
   padding-left: 20px;
 }
 
+@media (min-width: $tablet-width) {
+  .page-header__logo-image {
+    width: 147px;
+    height: 40px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .page-header {
     background-color: #1c232b;
