@@ -1,24 +1,64 @@
+.page-header__logotype-tablet,
+.page-header__logotype-desktop {
+  display: none;
+}
+
 .page-header {
   background-color: #283645;
 }
 
 .page-header__logo {
   display: block;
+  width: 80px;
   height: 70px;
   margin-right: auto;
-  padding-top: 21px;
-  padding-right: 44px;
-  padding-left: 20px;
+  margin-left: 20px;
+  padding: 5px;
+  color: #ffffff;
+
+  &:hover {
+    color: $color-pink;
+  }
+
+  &:active {
+    color: #ffffff;
+    opacity: 0.3;
+  }
+
+  .page-header__logotype-mobile {
+    margin-top: 20px;
+  }
 }
 
+
 @media (min-width: $tablet-width) {
-  .page-header__logo-image {
-    width: 147px;
-    height: 40px;
+  .page-header__logo {
+    width: 157px;
+    height: 110px;
+  }
+
+  .page-header__logotype-tablet {
+    display: inline-block;
+    margin-top: 27px;
+  }
+
+  .page-header__logotype-mobile,
+  .page-header__logotype-desktop {
+    display: none;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .page-header__logotype-desktop {
+    display: inline-block;
+    margin-top: 25px;
+  }
+
+  .page-header__logotype-mobile,
+  .page-header__logotype-tablet {
+    display: none;
+  }
+
   .page-header {
     background-color: #1c232b;
   }
@@ -32,10 +72,6 @@
   .page-header__logo {
     position: relative;
     z-index: 200;
-    width: 147px;
-    height: 40px;
-    padding-top: 43px;
-    padding-bottom: 43px;
   }
 }
 
