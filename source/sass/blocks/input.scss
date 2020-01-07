@@ -2,6 +2,16 @@
   padding: 20px;
   border: 2px solid #e5e5e5;
   border-radius: 2px;
+  outline: none;
+
+  &:hover {
+    border-color: #283645;
+  }
+
+  &:active,
+  &:focus {
+    border-color: $color-pink;
+  }
 }
 
 .input::-moz-placeholder {

@@ -15,5 +15,13 @@
     &--next {
       transform: rotate(180deg);
     }
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
   }
 }

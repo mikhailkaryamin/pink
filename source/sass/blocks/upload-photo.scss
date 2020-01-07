@@ -46,34 +46,33 @@
   display: block;
   width: 50px;
   height: 45px;
+  cursor: pointer;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-  }
+.upload-photo__icon {
+  color: #b5b9be;
 
   &--crop {
-    &::before {
-      width: 44px;
-      height: 44px;
-      background-image: url("/img/upload-photo-crop.svg");
-    }
+    width: 44px;
+    height: 44px;
   }
 
   &--fill {
-    &::before {
-      width: 48px;
-      height: 43px;
-      background-image: url("/img/upload-photo-fill.svg");
-    }
+    width: 48px;
+    height: 43px;
   }
 
   &--contrast {
-    &::before {
-      width: 32px;
-      height: 32px;
-      background-image: url("/img/upload-photo-contrast.svg");
-    }
+    width: 32px;
+    height: 32px;
+  }
+
+  &:hover {
+    color: #8d949b;
+  }
+
+  &:active {
+    color: $color-pink;
   }
 }
 
@@ -105,9 +104,16 @@
   right: 70px;
   width: 14px;
   height: 14px;
+  padding: 0;
   border: 2px solid #d22856;
   border-radius: 7px;
-  background: #ffffff;
+  background-color: #ffffff;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $color-pink;
+  }
 }
 
 .upload-photo__container-button {
@@ -144,10 +150,29 @@
     margin-bottom: 0;
   }
 
+  &:hover {
+    color: #ffffff;
+    background-color: $color-pink;
+  }
+
+  &:active {
+    color: rgba($color: #ffffff, $alpha: 0.3);
+  }
+
   &--cancel {
-    color: #283645;
-    border-color: #283645;
-    opacity: 0.1;
+    color: #e3e4e4;
+    border-color: #dddfe0;
+
+    &:hover {
+      color: #cdd0d3;
+      border-color: #b5b9be;
+      background-color: #f2f2f2;
+    }
+
+    &:active {
+      color: #cdd0d3;
+      background-color: #b5b9be;
+    }
   }
 }
 

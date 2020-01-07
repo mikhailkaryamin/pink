@@ -17,6 +17,26 @@
   overflow: hidden;
   background-position: 50% 50%;
   box-shadow: 0 0 0 0.1em #e5e5e5;
+
+  &:hover {
+    box-shadow: 0 0 0 0.1em #283645;
+  }
+
+  &:active {
+    box-shadow: 0 0 0 0.1em $color-pink;
+  }
+}
+
+.checkbox:hover > .checkbox__item {
+  box-shadow: 0 0 0 0.1em #283645;
+}
+
+.checkbox:active > .checkbox__item {
+  box-shadow: 0 0 0 0.1em $color-pink;
+}
+
+.checkbox__input:focus + .checkbox__item {
+  box-shadow: 0 0 0 0.1em $color-pink;
 }
 
 .checkbox__input:checked + .checkbox__item {

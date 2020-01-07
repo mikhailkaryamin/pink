@@ -10,3 +10,15 @@
   font-weight: 400;
 }
 
+.copyright__logo {
+  color: $color-pink;
+  cursor: pointer;
+
+  &:hover {
+    color: #283645;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
