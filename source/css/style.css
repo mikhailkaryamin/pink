@@ -603,12 +603,15 @@ a {
       flex-wrap: wrap;
   min-height: 260px; }
 
+.main-nav--nojs .main-nav__toggle {
+  display: none; }
+
 .main-nav__wrapper {
   width: 100%; }
 
 .main-nav__toggle {
   position: absolute;
-  top: 21px;
+  top: -44px;
   right: 19px;
   display: block;
   width: 21px;
@@ -617,8 +620,23 @@ a {
   border: none;
   background: rgba(40, 54, 69, 0);
   cursor: pointer; }
-  .main-nav__toggle--nojs {
-    display: none; }
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 21px;
+  height: 2px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 6px 0 0 #ffffff, 0 12px 0 0 #ffffff;
+          box-shadow: 0 6px 0 0 #ffffff, 0 12px 0 0 #ffffff; }
+
+.main-nav--closed {
+  min-height: 0; }
+
+.main-nav--closed > .main-nav__wrapper {
+  display: none; }
 
 .main-nav--opened .main-nav__toggle {
   position: absolute; }
