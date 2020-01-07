@@ -16,6 +16,24 @@
   padding-bottom: 39px;
 }
 
+.page-footer__logo {
+  color: #283645;
+  cursor: pointer;
+
+  &:hover {
+    color: $color-pink;
+  }
+
+  &:active {
+    color: #283645;
+    opacity: 0.3;
+  }
+}
+
+.page-footer__logotype-big {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .page-footer {
     &--main-mobile {
@@ -45,5 +63,13 @@
 @media (min-width: $desktop-width) {
   .page-footer__container {
     width: 960px;
+  }
+
+  .page-footer__logotype-small {
+    display: none;
+  }
+
+  .page-footer__logotype-big {
+    display: inline-block;
   }
 }

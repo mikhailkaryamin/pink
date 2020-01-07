@@ -34,7 +34,7 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a class="site-list__link" href="#">
+              <a class="site-list__link">
                 Главная
               </a>
             </li>
@@ -49,7 +49,7 @@
               </a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="#">
+              <a class="site-list__link">
                 HTML Academy
               </a>
             </li>
@@ -158,7 +158,7 @@
             Британские ученые провели исследования и доказали,
             что положительный эффект от использования приложения длится целые сутки!
           </span>
-          <a href="#" class="research-application__link">
+          <a class="research-application__link">
             Узнать больше об исследовании
           </a>
         </span>
@@ -195,21 +195,21 @@
       <div class="reviews__bread-crumbs bread-crumbs">
         <ul class="bread-crumbs__list">
           <li class="bread-crumbs__item">
-            <a href="#" class="bread-crumbs__link bread-crumbs__link--active">
+            <a class="bread-crumbs__link bread-crumbs__link--active">
               <span class="visually-hidden">
                 1-ый
               </span>
             </a>
           </li>
           <li class="bread-crumbs__item">
-            <a href="#" class="bread-crumbs__link">
+            <a class="bread-crumbs__link">
               <span class="visually-hidden">
                 2-ой
               </span>
             </a>
           </li>
           <li class="bread-crumbs__item">
-            <a href="#" class="bread-crumbs__link">
+            <a class="bread-crumbs__link">
               <span class="visually-hidden">
                 3-ий
               </span>
@@ -317,21 +317,21 @@
       <div class="tariffs__bread-crumbs bread-crumbs">
         <ul class="bread-crumbs__list">
           <li class="bread-crumbs__item">
-            <a href="#" class="bread-crumbs__link">
+            <a class="bread-crumbs__link">
               <span class="visually-hidden">
                 1-ый
               </span>
             </a>
           </li>
           <li class="bread-crumbs__item">
-            <a href="#" class="bread-crumbs__link bread-crumbs__link--active">
+            <a class="bread-crumbs__link bread-crumbs__link--active">
               <span class="visually-hidden">
                 2-ой
               </span>
             </a>
           </li>
           <li class="bread-crumbs__item">
-            <a href="#" class="bread-crumbs__link">
+            <a class="bread-crumbs__link">
               <span class="visually-hidden">
                 3-ий
               </span>
@@ -362,7 +362,7 @@
             <span class="contacts__type">
               Пишите:
             </span>
-            <span class="contacts__value">
+            <span class="contacts__value contacts__value--email">
               mail@htmlacademy.ru
             </span>
           </li>
@@ -386,14 +386,20 @@
   </main>
   <footer class="page-footer page-footer--main-mobile">
     <div class="page-footer__container">
-      <a href="#" class="page-footer__logo">
-        <img class="page-footer__logo-img" src="/img/page-footer__logotype-tablet.svg" width="147" height="40"
-          alt="Логотип Pink">
+      <a class="page-footer__logo">
+          <svg class="page-footer__logotype-small" width="147" height="40">
+            <use xlink:href="/img/sprite.svg#page-footer__logotype-small"></use>
+          </svg>
+          <svg class="page-footer__logotype-big" width="147" height="40">
+            <use xlink:href="/img/sprite.svg#page-footer__logotype-big"></use>
+          </svg>
       </a>
       <ul class="page-footer__social-list social-list">
         <li class="social-list__item">
           <a class="social-list__twitter" href="http://twitter.com">
-            <img class="social-list__img" src="/img/social-list__twitter.svg" width="18" height="14" alt="Twitter">
+            <svg class="social-list__img"  width="18" height="14">
+              <use xlink:href="/img/sprite.svg#social-list-twitter"></use>
+            </svg>
             <span class="visually-hidden">
               Twitter
             </span>
@@ -401,7 +407,9 @@
         </li>
         <li class="social-list__item">
           <a class="social-list__facebook" href="http://facebook.com">
-            <img class="social-list__img" src="/img/social-list__facebook.svg" width="9" height="18" alt="Facebook">
+            <svg class="social-list__img" width="9" height="18">
+              <use xlink:href="/img/sprite.svg#social-list-facebook"></use>
+            </svg>
             <span class="visually-hidden">
               Facebook
             </span>
@@ -409,7 +417,9 @@
         </li>
         <li class="social-list__item">
           <a class="social-list__youtube" href="http://youtube.com">
-            <img class="social-list__img" src="/img/social-list__youtube.svg" width="15" height="13" alt="Youtube">
+            <svg class="social-list__img" width="15" height="13">
+              <use xlink:href="/img/sprite.svg#social-list-youtube"></use>
+            </svg>
             <span class="visually-hidden">
               Youtube
             </span>
@@ -421,8 +431,9 @@
           Разработано
         </b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="copyright__logo" src="/img/copyright__logo-tablet.svg" width="27" height="34"
-            alt="Логотип htmlacademy">
+          <svg class="copyright__logo" width="27" height="34">
+            <use xlink:href="/img/sprite.svg#copyright__logo"></use>
+          </svg>
           <span class="visually-hidden">
             HTML Academy
           </span>

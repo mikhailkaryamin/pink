@@ -111,19 +111,24 @@
 
 .user-photos__numbers-of-likes {
   position: relative;
-  padding-left: 32px;
-  color: #d22856;
+  display: flex;
+  align-items: baseline;
+  color: $color-pink;
   font-size: 12px;
   text-transform: uppercase;
+  cursor: pointer;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 3px;
-    left: 0;
-    width: 13px;
-    height: 12px;
-    background-image: url("/img/user-photos__like.svg");
+.user-photos__numbers-of-likes:hover > .user-photos__like {
+  color: $color-pink;
+}
+
+.user-photos__like {
+  margin-right: 5px;
+  color: transparent;
+
+  &:hover {
+    color: $color-pink;
   }
 }
 
@@ -219,13 +224,12 @@
   }
 
   .user-photos__numbers-of-likes {
-    padding-right: 32px;
-    padding-left: 0;
+    flex-direction: row-reverse;
+  }
 
-    &::before {
-      right: 0;
-      left: auto;
-    }
+  .user-photos__like {
+    margin-right: 0;
+    margin-left: auto;
   }
 
   .user-photos__comment--main > .user-photos__numbers-of-likes {

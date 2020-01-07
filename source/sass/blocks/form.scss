@@ -112,6 +112,18 @@
   border: none;
   border-radius: 2px;
   background-color: #2aab6d;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: rgba($color: #ffffff, $alpha: 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
 }
 
 .form__small-text {
