@@ -1,17 +1,23 @@
 .contacts__wrapper {
+  padding-top: 43px;
   padding-right: 30px;
+  padding-bottom: 18px;
   padding-left: 30px;
 }
 
 .contacts__text {
+  margin: 0;
   font-size: 24px;
   font-weight: 300;
+  line-height: 28px;
   text-align: center;
 }
 
 .contacts__list {
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding-top: 34px;
   padding-left: 0;
   list-style: none;
 }
@@ -19,14 +25,12 @@
 .contacts__item {
   display: flex;
   flex-direction: column;
+  margin-bottom: 21px;
   text-align: center;
-
-  &--write {
-    padding: 0 27px;
-  }
 }
 
 .contacts__type {
+  margin-bottom: 4px;
   font-size: 18px;
   font-weight: 700;
 }
@@ -36,6 +40,7 @@
   color: #d22856;
   font-size: 24px;
   font-weight: 300;
+  line-height: 28px;
 
   &--email {
     cursor: pointer;

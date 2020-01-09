@@ -2,27 +2,26 @@
   position: relative;
   z-index: 100;
   width: 100%;
-  padding-top: 400px;
-  padding-right: 20px;
-  padding-bottom: 10px;
-  padding-left: 20px;
   background-color: #1d2631;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: calc(50% - 160px);
-    width: 320px;
-    height: 400px;
-    background-image: url("../img/application-download__bg-mobile.jpg");
-    background-repeat: no-repeat;
-    background-size: 320px 400px;
-    background-position-y: -56px;
-  }
+.application-download__bg {
+  width: 320px;
+  margin: 0 auto;
+  margin-top: -67px;
+}
+
+.application-download__bg img {
+  display: block;
 }
 
 .application-download__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 26px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
   text-align: center;
 }
 
@@ -33,7 +32,7 @@
 .application-download__button {
   display: inline-block;
   width: 280px;
-  margin-bottom: 42px;
+  margin-bottom: 31px;
   padding-top: 17px;
   padding-bottom: 17px;
   color: #ffffff;
@@ -60,9 +59,9 @@
 
 .application-download__text {
   margin: 0;
-  padding-top: 27px;
+  padding-top: 23px;
   padding-right: 5px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   padding-left: 5px;
   color: #ffffff;
   font-weight: 300;
@@ -73,18 +72,6 @@
   .application-download {
     min-height: 620px;
     padding-top: 0;
-
-    &::before {
-      top: -96px;
-      left: calc(50% - 330px);
-      z-index: 1;
-      width: 660px;
-      height: 730px;
-      background-image: url("../img/application-download__bg-tablet.jpg");
-      background-repeat: no-repeat;
-      background-size: 660px 730px;
-      background-position: center;
-    }
   }
 
   .application-download__wrapper {
@@ -93,7 +80,6 @@
     display: flex;
     justify-content: flex-start;
     width: 620px;
-    margin: 0 auto;
   }
 
   .application-download__container {
@@ -128,15 +114,6 @@
     padding-right: 10px;
     padding-left: 10px;
     background-color: #1c232b;
-
-    &::before {
-      top: -110px;
-      left: calc(50% - 600px);
-      width: 1200px;
-      height: 854px;
-      background-image: url("../img/application-download__bg-desktop.jpg");
-      background-size: 1200px 854px;
-    }
   }
 
   .application-download__wrapper {

@@ -1,8 +1,8 @@
 .tariffs {
   position: relative;
-  padding-top: 135px;
+  padding-top: 118px;
   padding-right: 20px;
-  padding-bottom: 5px;
+  padding-bottom: 34px;
   padding-left: 20px;
   background-color: #f2f2f2;
   overflow: hidden;
@@ -10,7 +10,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: -150px;
+    top: -159px;
     left: -50px;
     transform: rotate(-5deg);
     width: 120vw;
@@ -32,6 +32,7 @@
   flex: 1;
   min-height: 100px;
   padding: 5px;
+  padding-top: 17px;
   text-align: center;
   border-right: 2px solid #f2f2f2;
   border-left: 2px solid #f2f2f2;
@@ -49,10 +50,11 @@
       content: "ХИТ";
       position: absolute;
       top: 10px;
-      left: -30px;
+      left: -26px;
       transform: rotate(-45deg);
       width: 100px;
       height: 30px;
+      padding-top: 3px;
       color: #ffffff;
       background-color: #d22856;
     }
@@ -125,6 +127,10 @@
       background-image: url("/img/tarrifs-no.svg");
     }
   }
+}
+
+.tariffs__bread-crumbs {
+  margin-top: 27px;
 }
 
 @media (min-width: $tablet-width) {

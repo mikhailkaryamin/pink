@@ -3,16 +3,22 @@
   display: none;
 }
 
-.page-header {
+.page-header__wrapper {
+  position: relative;
+  z-index: 200;
   background-color: #283645;
+
+  &--closed-menu {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .page-header__logo {
   display: block;
   width: 80px;
-  height: 70px;
+  height: 67px;
   margin-right: auto;
-  margin-left: 20px;
+  margin-left: 16px;
   padding: 5px;
   color: #ffffff;
 
@@ -26,7 +32,7 @@
   }
 
   .page-header__logotype-mobile {
-    margin-top: 20px;
+    margin-top: 17px;
   }
 }
 

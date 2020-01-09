@@ -1,6 +1,6 @@
 .reviews {
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .reviews__headline {
@@ -11,17 +11,20 @@
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding: 25px 5px;
+  padding: 0;
+  padding-top: 42px;
+  padding-bottom: 20px;
   text-align: center;
 }
 
 .reviews__item-text {
   order: 2;
   margin: 0;
+  line-height: 30px;
 }
 
 .reviews__item-name-author {
-  margin-bottom: 10px;
+  margin-bottom: 13px;
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
