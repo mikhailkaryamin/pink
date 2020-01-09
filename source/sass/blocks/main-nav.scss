@@ -3,7 +3,7 @@
   z-index: 200;
   display: flex;
   flex-wrap: wrap;
-  min-height: 260px;
+  min-height: 257px;
 }
 
 .main-nav--nojs .main-nav__toggle {
@@ -16,26 +16,29 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: -44px;
-  right: 19px;
   display: block;
-  width: 21px;
-  height: 21px;
   padding: 0;
   border: none;
   background: rgba(40, 54, 69, 0);
   cursor: pointer;
 }
 
-.main-nav--closed .main-nav__toggle::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 21px;
-  height: 2px;
-  background-color: #ffffff;
-  box-shadow: 0 6px 0 0 #ffffff, 0 12px 0 0 #ffffff;
+.main-nav--closed .main-nav__toggle {
+  top: -49px;
+  right: 19px;
+  width: 50px;
+  height: 24px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 4px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff;
+  }
 }
 
 .main-nav--closed {
@@ -47,16 +50,19 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-  position: absolute;
+  top: -49px;
+  right: 19px;
+  width: 24px;
+  height: 23px;
 
   &::before,
   &::after {
     content: "";
     position: absolute;
     top: 10px;
-    left: 0;
-    width: 25px;
-    height: 3px;
+    left: -3px;
+    width: 31px;
+    height: 4px;
     background-color: #ffffff;
   }
 
