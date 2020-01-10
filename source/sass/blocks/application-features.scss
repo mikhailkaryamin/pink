@@ -14,9 +14,9 @@
     &::before {
       content: "";
       position: absolute;
-      top: -180px;
+      top: -159px;
       left: -50px;
-      transform: rotate(-3deg);
+      transform: rotate(-6deg);
       width: 120vw;
       height: 200px;
       background-color: #ffffff;
@@ -96,8 +96,12 @@
   }
 
   .application-features__wrapper {
-    &::after {
-      bottom: -134px;
+    &--slogan {
+      padding-top: 33px;
+    }
+
+    &--list {
+      padding-bottom: 0;
     }
   }
 
@@ -105,28 +109,35 @@
     font-size: 40px;
   }
 
+  .application-features__slogan-question {
+    margin-bottom: 12px;
+  }
+
   .application-features__slogan-answer {
+    padding-left: 6px;
     line-height: 1.15;
   }
 
   .application-features__list {
-    width: calc(50% + 310px);
-    min-height: 484px;
-    padding-top: 80px;
+    width: 620px;
+    min-height: 417px;
+    margin: 0 auto;
+    padding-top: 5px;
     padding-bottom: 0;
     padding-left: 310px;
   }
 
   .application-features__item {
-    padding-bottom: 0;
+    margin-bottom: 22px;
+    padding: 0;
     text-align: left;
 
     &--new-friends {
       &::before {
-        bottom: -45px;
-        left: -300px;
+        bottom: -35px;
+        left: -310px;
         width: 267px;
-        height: 485px;
+        height: 486px;
         background-image: url("/img/application-features__list-bg-tablet.png");
       }
     }

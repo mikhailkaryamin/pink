@@ -9,7 +9,7 @@
     margin: 0;
     padding-top: 60px;
     padding-right: 20px;
-    padding-bottom: 100px;
+    padding-bottom: 20px;
     padding-left: 20px;
   }
 
@@ -17,7 +17,9 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    width: 620px;
     min-height: 285px;
+    margin: 0 auto;
     padding-top: 35px;
     padding-right: 5px;
     padding-left: 310px;
@@ -26,7 +28,7 @@
       content: "";
       position: absolute;
       top: 0;
-      left: 20px;
+      left: 0;
       width: 238px;
       height: 276px;
       background-image: url("/img/research-application-watch-tablet.png");
@@ -34,9 +36,14 @@
   }
 
   .research-application__description {
+    margin-bottom: 10px;
     font-size: 30px;
     font-weight: 700;
     line-height: 36px;
+  }
+
+  .research-application__text {
+    margin-bottom: 10px;
   }
 
   .research-application__link {

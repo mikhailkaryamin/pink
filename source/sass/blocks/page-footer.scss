@@ -45,18 +45,16 @@
     display: flex;
     justify-content: space-between;
     width: 660px;
-    padding-top: 37px;
-    padding-right: 20px;
-    padding-bottom: 37px;
-    padding-left: 20px;
+    padding: 20px;
   }
 
   .page-footer__logo {
-    padding-top: 10px;
+    padding-top: 14px;
   }
 
   .page-footer__social-list {
-    width: 180px;
+    width: 195px;
+    margin-top: 20px;
   }
 }
 
