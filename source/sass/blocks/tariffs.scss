@@ -12,7 +12,7 @@
     position: absolute;
     top: -159px;
     left: -50px;
-    transform: rotate(-5deg);
+    transform: rotate(-4.3deg);
     width: 120vw;
     height: 200px;
     background-color: #ffffff;
@@ -203,15 +203,48 @@
 }
 
 @media (min-width: $desktop-width) {
+  .tariffs {
+    padding-top: 152px;
+    padding-bottom: 98px;
+  }
+
   .tariffs__list {
     width: 940px;
+  }
+
+  .tariffs__description {
+    min-height: 98px;
+    padding-top: 17px;
+
+    &--hit {
+      &::before {
+        top: 10px;
+        left: -26px;
+      }
+    }
+  }
+
+  .tariffs__addition {
+    min-height: 60px;
+    padding-top: 13px;
+    padding-left: 20px;
+    font-size: 18px;
   }
 
   .tariffs__addition-value {
     width: 235px;
 
     &::before {
+      top: 17px;
       left: 100px;
     }
+  }
+
+  .tariffs__name {
+    font-size: 18px;
+  }
+
+  .tariffs__cost {
+    font-size: 24px;
   }
 }

@@ -118,6 +118,11 @@
 @media (min-width: $desktop-width) {
   .contacts__wrapper {
     width: 960px;
+    padding-top: 68px;
+  }
+
+  .contacts__list {
+    padding-top: 13px;
   }
 
   .contacts__text {
@@ -132,6 +137,7 @@
 
     &--call {
       order: 1;
+      padding-right: 44px;
     }
 
     &--address {
@@ -141,10 +147,11 @@
 
     &--write {
       order: 3;
+      padding-left: 45px;
     }
   }
 
   .contacts__type {
-    margin-bottom: 20px;
+    margin-bottom: 23px;
   }
 }

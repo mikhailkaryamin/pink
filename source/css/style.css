@@ -626,11 +626,16 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 960px;
-    margin: 0 auto; }
+    width: 1200px;
+    margin: 0 auto;
+    padding-right: 120px;
+    padding-left: 120px;
+    background-color: rgba(0, 0, 0, 0.3); }
   .page-header__logo {
     position: relative;
-    z-index: 200; } }
+    z-index: 200;
+    margin-left: 7px;
+    padding: 3px; } }
 
 .main-nav {
   position: relative;
@@ -704,7 +709,8 @@ a {
 
 @media (min-width: 1200px) {
   .main-nav {
-    min-height: 100px; }
+    min-height: 100px;
+    padding-left: 153px; }
   .main-nav__toggle {
     display: none; } }
 
@@ -766,7 +772,8 @@ a {
         -ms-flex-direction: row;
             flex-direction: row; }
   .site-list__item {
-    margin-right: 75px;
+    min-width: 90px;
+    margin-right: 60px;
     padding-top: 43px;
     padding-bottom: 43px;
     border: none;
@@ -776,6 +783,8 @@ a {
       border: none;
       -webkit-box-shadow: none;
               box-shadow: none; }
+    .site-list__item:nth-child(4n) {
+      margin-right: 0; }
   .site-list__link {
     font-weight: 400;
     line-height: 18px;
@@ -916,22 +925,31 @@ a {
 @media (min-width: 1200px) {
   .application-download {
     min-height: 743px;
-    margin: 0 auto;
-    padding-right: 10px;
-    padding-left: 10px;
     background-color: #1c232b; }
+  .application-download__bg {
+    left: calc(50% - 600px);
+    width: 1200px; }
   .application-download__wrapper {
-    width: 960px; }
+    width: 1200px;
+    padding-left: 125px; }
   .application-download__container {
-    padding-top: 130px;
+    width: 310px;
+    padding-top: 83px;
     padding-right: 5px;
     padding-left: 5px; }
   .application-download__slogan {
-    margin-bottom: 70px; }
+    width: auto;
+    margin-bottom: 51px;
+    font-size: 50px;
+    line-height: 60px; }
   .application-download__button {
-    margin-bottom: 60px; }
+    margin-bottom: 70px;
+    padding-right: 23px;
+    padding-left: 23px;
+    font-size: 21px;
+    line-height: 18px; }
   .application-download__list {
-    margin-bottom: 24px; } }
+    margin-bottom: 30px; } }
 
 .application-features__wrapper {
   position: relative;
@@ -1058,10 +1076,10 @@ a {
     display: block;
     width: 760px;
     margin: 0 auto;
-    padding-top: 75px;
-    padding-bottom: 60px;
+    padding-top: 36px;
+    padding-bottom: 55px;
     font-size: 50px;
-    line-height: 1.15; }
+    line-height: 60px; }
   .application-features__list {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1071,19 +1089,20 @@ a {
         flex-wrap: wrap;
     width: 960px;
     margin: 0 auto;
-    padding: 0; }
+    padding: 0;
+    padding-left: 20px; }
     .application-features__list::before {
       display: none; }
   .application-features__item {
     width: 275px;
-    margin-right: 58px;
-    padding-top: 340px;
+    margin-right: 46px;
+    padding-top: 355px;
     text-align: center; }
     .application-features__item:nth-child(3n) {
       margin-right: 0; }
     .application-features__item::before {
       top: 0;
-      left: 0;
+      left: -8px;
       width: 294px;
       height: 301px; }
     .application-features__item--mood::before {
@@ -1096,6 +1115,9 @@ a {
     font-size: 30px;
     line-height: 30px; }
   .application-features__item-text {
+    margin: 0;
+    padding: 0 15px;
+    padding-top: 19px;
     font-size: 18px;
     line-height: 30px; } }
 
@@ -1145,23 +1167,38 @@ a {
     margin-bottom: 10px; }
   .research-application__link {
     color: #d22856;
-    text-decoration: underline; } }
+    text-decoration: underline;
+    cursor: pointer; } }
 
 @media (min-width: 1200px) {
   .research-application {
+    padding-top: 100px;
+    padding-bottom: 70px;
     background-color: #f2f2f2; }
   .research-application__container {
     width: 960px;
     margin: 0 auto;
+    padding-top: 38px;
     padding-bottom: 10px;
-    padding-left: 380px; }
+    padding-left: 376px; }
+    .research-application__container::before {
+      top: -57px;
+      left: 11px;
+      width: 298px;
+      height: 345px;
+      background-image: url("../img/research-application-watch-desktop.png"); }
   .research-application__description {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     line-height: 30px; }
   .research-application__description br {
     display: none; }
   .research-application__text {
-    margin-bottom: 20px; } }
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 30px; }
+  .research-application__link {
+    font-size: 18px;
+    line-height: 30px; } }
 
 .reviews {
   padding-right: 20px;
@@ -1232,16 +1269,18 @@ a {
         -ms-flex-align: center;
             align-items: center;
     width: 960px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    padding-right: 10px;
+    padding-left: 10px; }
   .reviews__item {
     position: relative;
     width: 720px;
     margin: 0 auto;
-    padding-top: 180px; }
+    padding-top: 166px; }
     .reviews__item::before {
       content: "";
       position: absolute;
-      top: 70px;
+      top: 50px;
       left: calc(50% - 39.5px);
       display: block;
       width: 79px;
@@ -1250,7 +1289,9 @@ a {
   .reviews__item-name-author {
     font-size: 24px; }
   .reviews__item-about-author {
-    font-size: 18px; } }
+    font-size: 18px; }
+  .reviews__button {
+    margin-bottom: -50px; } }
 
 .button-review {
   display: none; }
@@ -1285,8 +1326,8 @@ a {
     position: absolute;
     top: -159px;
     left: -50px;
-    -webkit-transform: rotate(-5deg);
-            transform: rotate(-5deg);
+    -webkit-transform: rotate(-4.3deg);
+            transform: rotate(-4.3deg);
     width: 120vw;
     height: 200px;
     background-color: #ffffff; }
@@ -1428,12 +1469,31 @@ a {
     display: none; } }
 
 @media (min-width: 1200px) {
+  .tariffs {
+    padding-top: 152px;
+    padding-bottom: 98px; }
   .tariffs__list {
     width: 940px; }
+  .tariffs__description {
+    min-height: 98px;
+    padding-top: 17px; }
+    .tariffs__description--hit::before {
+      top: 10px;
+      left: -26px; }
+  .tariffs__addition {
+    min-height: 60px;
+    padding-top: 13px;
+    padding-left: 20px;
+    font-size: 18px; }
   .tariffs__addition-value {
     width: 235px; }
     .tariffs__addition-value::before {
-      left: 100px; } }
+      top: 17px;
+      left: 100px; }
+  .tariffs__name {
+    font-size: 18px; }
+  .tariffs__cost {
+    font-size: 24px; } }
 
 .contacts__wrapper {
   padding-top: 43px;
@@ -1537,7 +1597,10 @@ a {
 
 @media (min-width: 1200px) {
   .contacts__wrapper {
-    width: 960px; }
+    width: 960px;
+    padding-top: 68px; }
+  .contacts__list {
+    padding-top: 13px; }
   .contacts__text {
     width: 500px;
     margin: 0 auto;
@@ -1548,7 +1611,8 @@ a {
     .contacts__item--call {
       -webkit-box-ordinal-group: 2;
           -ms-flex-order: 1;
-              order: 1; }
+              order: 1;
+      padding-right: 44px; }
     .contacts__item--address {
       -webkit-box-ordinal-group: 3;
           -ms-flex-order: 2;
@@ -1557,18 +1621,25 @@ a {
     .contacts__item--write {
       -webkit-box-ordinal-group: 4;
           -ms-flex-order: 3;
-              order: 3; }
+              order: 3;
+      padding-left: 45px; }
   .contacts__type {
-    margin-bottom: 20px; } }
+    margin-bottom: 23px; } }
 
 .map {
   height: 200px;
-  background-image: url("/img/map-bc.jpg");
+  background-image: url("/img/map-bg-mobile.jpg");
   background-position: 0 -444px; }
 
 @media (min-width: 660px) {
   .map {
-    height: 375px; } }
+    height: 375px;
+    background-image: url("../img/map-bg-tablet.jpg"); } }
+
+@media (min-width: 1200px) {
+  .map {
+    height: 495px;
+    background-image: url("../img/map-bg-desktop.jpg"); } }
 
 .page-footer--main-mobile {
   display: none; }
@@ -1617,11 +1688,14 @@ a {
 
 @media (min-width: 1200px) {
   .page-footer__container {
-    width: 960px; }
+    width: 960px;
+    padding: 55px 10px; }
   .page-footer__logotype-small {
     display: none; }
   .page-footer__logotype-big {
-    display: inline-block; } }
+    display: inline-block; }
+  .page-footer__social-list {
+    padding-left: 12px; } }
 
 .social-list {
   display: -webkit-box;
@@ -1680,6 +1754,11 @@ a {
     color: #283645; }
   .copyright__logo:active {
     opacity: 0.3; }
+
+@media (min-width: 1200px) {
+  .copyright__text {
+    font-size: 18px;
+    line-height: 18px; } }
 
 .inner-main {
   position: relative;
