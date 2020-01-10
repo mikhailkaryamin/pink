@@ -38,6 +38,10 @@
 
 
 @media (min-width: $tablet-width) {
+  .page-header {
+    background-color: #1d2631;
+  }
+
   .page-header__logo {
     width: 157px;
     height: 110px;
@@ -45,7 +49,7 @@
 
   .page-header__logotype-tablet {
     display: inline-block;
-    margin-top: 27px;
+    margin-top: 22px;
   }
 
   .page-header__logotype-mobile,

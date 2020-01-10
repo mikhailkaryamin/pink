@@ -3,3 +3,9 @@
   background-image: url("/img/map-bc.jpg");
   background-position: 0 -444px;
 }
+
+@media (min-width: $tablet-width) {
+  .map {
+    height: 375px;
+  }
+}
