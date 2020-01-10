@@ -49,23 +49,35 @@
   .research-application__link {
     color: #d22856;
     text-decoration: underline;
+    cursor: pointer;
   }
 }
 
 @media (min-width: $desktop-width) {
   .research-application {
+    padding-top: 100px;
+    padding-bottom: 70px;
     background-color: #f2f2f2;
   }
 
   .research-application__container {
     width: 960px;
     margin: 0 auto;
+    padding-top: 38px;
     padding-bottom: 10px;
-    padding-left: 380px;
+    padding-left: 376px;
+
+    &::before {
+      top: -57px;
+      left: 11px;
+      width: 298px;
+      height: 345px;
+      background-image: url("../img/research-application-watch-desktop.png");
+    }
   }
 
   .research-application__description {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     line-height: 30px;
   }
 
@@ -74,6 +86,13 @@
   }
 
   .research-application__text {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .research-application__link {
+    font-size: 18px;
+    line-height: 30px;
   }
 }

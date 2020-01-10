@@ -71,18 +71,20 @@
     align-items: center;
     width: 960px;
     margin: 0 auto;
+    padding-right: 10px;
+    padding-left: 10px;
   }
 
   .reviews__item {
     position: relative;
     width: 720px;
     margin: 0 auto;
-    padding-top: 180px;
+    padding-top: 166px;
 
     &::before {
       content: "";
       position: absolute;
-      top: 70px;
+      top: 50px;
       left: calc(50% - 39.5px);
       display: block;
       width: 79px;
@@ -97,5 +99,9 @@
 
   .reviews__item-about-author {
     font-size: 18px;
+  }
+
+  .reviews__button {
+    margin-bottom: -50px;
   }
 }

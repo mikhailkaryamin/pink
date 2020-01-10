@@ -61,7 +61,8 @@
   }
 
   .site-list__item {
-    margin-right: 75px;
+    min-width: 90px;
+    margin-right: 60px;
     padding-top: 43px;
     padding-bottom: 43px;
     border: none;
@@ -70,6 +71,10 @@
     &:first-of-type {
       border: none;
       box-shadow: none;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
     }
   }
 

@@ -123,31 +123,42 @@
 @media (min-width: $desktop-width) {
   .application-download {
     min-height: 743px;
-    margin: 0 auto;
-    padding-right: 10px;
-    padding-left: 10px;
     background-color: #1c232b;
   }
 
+  .application-download__bg {
+    left: calc(50% - 600px);
+    width: 1200px;
+  }
+
   .application-download__wrapper {
-    width: 960px;
+    width: 1200px;
+    padding-left: 125px;
   }
 
   .application-download__container {
-    padding-top: 130px;
+    width: 310px;
+    padding-top: 83px;
     padding-right: 5px;
     padding-left: 5px;
   }
 
   .application-download__slogan {
-    margin-bottom: 70px;
+    width: auto;
+    margin-bottom: 51px;
+    font-size: 50px;
+    line-height: 60px;
   }
 
   .application-download__button {
-    margin-bottom: 60px;
+    margin-bottom: 70px;
+    padding-right: 23px;
+    padding-left: 23px;
+    font-size: 21px;
+    line-height: 18px;
   }
 
   .application-download__list {
-    margin-bottom: 24px;
+    margin-bottom: 30px;
   }
 }
