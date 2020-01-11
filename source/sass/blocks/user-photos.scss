@@ -189,12 +189,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .user-photos__bg {
-    top: -110px;
-    height: 438px;
-    background-image: url("../img/bg-tablet.jpg");
-  }
-
   .user-photos__headline-container {
     min-height: 327px;
     padding-top: 70px;
@@ -300,8 +294,8 @@
     background-color: tomato;
 
     &--main {
-      width: auto;
-      height: auto;
+      width: 660px;
+      height: 509px;
     }
   }
 
@@ -313,14 +307,12 @@
 
 @media (min-width: $desktop-width) {
   .user-photos__headline-container {
-    min-height: 287px;
+    min-height: 284px;
+    padding-top: 65px;
 
     &::before {
-      top: -110px;
-      left: calc(50% - 600px);
-      width: 1200px;
-      height: 397px;
-      background-image: url("/img/inner-main-bg-desktop.jpg");
+      height: 395px;
+      background-image: url("/img/bg-desktop.jpg");
     }
   }
 
@@ -328,8 +320,18 @@
     width: 1200px;
   }
 
+  .user-photos__headline-photo-of-the-day {
+    top: 54px;
+    right: 130px;
+  }
+
+  .user-photos__photo-of-the-day-img {
+    min-height: 506px;
+  }
+
   .user-photos__text {
     width: 715px;
+    padding-bottom: 88px;
   }
 
   .user-photos__comment {
@@ -339,12 +341,19 @@
   }
 
   .user-photos__item {
+    min-height: 555px;
+    margin-bottom: 54px;
+
     &:nth-child(even) {
       margin-right: 20px;
     }
 
     &:nth-child(3n) {
       margin-right: 0;
+    }
+
+    &:nth-last-child(-n+3) {
+      margin-bottom: 0;
     }
   }
 
@@ -353,5 +362,18 @@
     margin: 0 auto;
     padding-right: 10px;
     padding-left: 10px;
+  }
+
+  .user-photos__photo {
+    height: 400px;
+
+    &--main {
+      width: 1200px;
+      height: 506px;
+    }
+  }
+
+  .user-photos__photo-img {
+    height: 400px;
   }
 }

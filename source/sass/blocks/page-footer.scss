@@ -76,8 +76,8 @@
 
 @media (min-width: $desktop-width) {
   .page-footer__container {
-    width: 960px;
-    padding: 55px 10px;
+    width: 940px;
+    padding: 85px 0;
   }
 
   .page-footer__logotype-small {
@@ -89,6 +89,7 @@
   }
 
   .page-footer__social-list {
-    padding-left: 12px;
+    width: auto;
+    padding-left: 35px;
   }
 }
