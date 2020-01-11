@@ -2,6 +2,7 @@
   width: 320px;
   margin: 0 auto;
   padding: 20px;
+  padding-bottom: 45px;
   background-color: #f2f2f2;
 }
 
@@ -16,7 +17,8 @@
 
 .upload-photo__text {
   margin: 0;
-  padding: 47px 5px;
+  padding: 44px 5px;
+  line-height: 30px;
   text-align: center;
   background-color: #ffffff;
 }
@@ -24,9 +26,10 @@
 .upload-photo__filter-selection {
   display: flex;
   justify-content: space-between;
-  padding-top: 40px;
-  padding-right: 45px;
-  padding-bottom: 19px;
+  margin: 0;
+  padding-top: 37px;
+  padding-right: 28px;
+  padding-bottom: 25px;
   padding-left: 35px;
   list-style: none;
 }
@@ -39,6 +42,14 @@
 .upload-photo__item-filter {
   position: relative;
   display: block;
+
+  &--fill {
+    padding-top: 2px;
+  }
+
+  &--contrast {
+    padding-top: 5px;
+  }
 }
 
 .upload-photo__tool {
@@ -101,7 +112,7 @@
 .upload-photo__slider-button {
   position: absolute;
   top: 4px;
-  right: 70px;
+  right: 55px;
   width: 14px;
   height: 14px;
   padding: 0;
@@ -120,7 +131,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  padding-top: 38px;
+  padding-top: 40px;
 
   &::before {
     content: "";
