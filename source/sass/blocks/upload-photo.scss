@@ -2,6 +2,7 @@
   width: 320px;
   margin: 0 auto;
   padding: 20px;
+  padding-bottom: 45px;
   background-color: #f2f2f2;
 }
 
@@ -16,7 +17,8 @@
 
 .upload-photo__text {
   margin: 0;
-  padding: 47px 5px;
+  padding: 44px 5px;
+  line-height: 30px;
   text-align: center;
   background-color: #ffffff;
 }
@@ -24,9 +26,10 @@
 .upload-photo__filter-selection {
   display: flex;
   justify-content: space-between;
-  padding-top: 40px;
+  margin: 0;
+  padding-top: 42px;
   padding-right: 45px;
-  padding-bottom: 19px;
+  padding-bottom: 21px;
   padding-left: 35px;
   list-style: none;
 }
@@ -39,13 +42,19 @@
 .upload-photo__item-filter {
   position: relative;
   display: block;
+
+  &--fill {
+    padding-top: 2px;
+  }
+
+  &--contrast {
+    padding-top: 5px;
+  }
 }
 
 .upload-photo__tool {
   position: relative;
   display: block;
-  width: 50px;
-  height: 45px;
   cursor: pointer;
 }
 
@@ -78,7 +87,7 @@
 
 .upload-photo__slider {
   position: relative;
-  display: flex;
+  display: none;
   justify-content: center;
   height: 14px;
   padding-top: 10px;
@@ -86,8 +95,8 @@
   padding-bottom: 35px;
   padding-left: 19px;
 
-  &--current-filter {
-    display: none;
+  &--mobile {
+    display: flex;
   }
 }
 
@@ -101,7 +110,7 @@
 .upload-photo__slider-button {
   position: absolute;
   top: 4px;
-  right: 70px;
+  right: 55px;
   width: 14px;
   height: 14px;
   padding: 0;
@@ -120,7 +129,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  padding-top: 38px;
+  padding-top: 40px;
 
   &::before {
     content: "";
@@ -179,6 +188,8 @@
 @media (min-width: $tablet-width) {
   .upload-photo__container {
     width: 660px;
+    padding-top: 57px;
+    padding-bottom: 55px;
   }
 
   .upload-photo__wrapper {
@@ -188,12 +199,14 @@
   }
 
   .upload-photo__text {
+    margin-bottom: 26px;
     font-size: 18px;
     line-height: 30px;
   }
 
   .upload-photo__image {
     width: 310px;
+    height: 400px;
     padding-right: 10px;
   }
 
@@ -205,60 +218,85 @@
 
   .upload-photo__item-filter {
     display: flex;
-    align-items: center;
     height: 73px;
+    padding-left: 3px;
     border-bottom: 1px solid #dddfe0;
-  }
-
-  .upload-photo__tool {
-    width: 53px;
-    height: 22px;
-
-    &::before {
-      background-size: contain;
-    }
 
     &--crop {
-      &::before {
-        width: 22px;
-        height: 22px;
-      }
+      height: 55px;
+      padding-top: 9px;
     }
 
     &--fill {
-      &::before {
-        width: 24px;
-        height: 22px;
-      }
+      padding-top: 28px;
     }
 
     &--contrast {
-      height: 16px;
+      padding-top: 25px;
+    }
+  }
 
-      &::before {
-        width: 16px;
-        height: 16px;
-      }
+  .upload-photo__tool {
+    &--crop {
+      margin-right: 30px;
+    }
+
+    &--fill {
+      margin-right: 28px;
+    }
+
+    &--contrast {
+      margin-right: 31px;
+      padding-left: 5px;
+    }
+  }
+
+  .upload-photo__icon {
+    color: $color-pink;
+
+    &--crop {
+      width: 22px;
+      height: 22px;
+    }
+
+    &--fill {
+      width: 24px;
+      height: 22px;
+    }
+
+    &--contrast {
+      width: 16px;
+      height: 16px;
     }
   }
 
   .upload-photo__slider {
-    width: 202px;
+    display: flex;
+    margin-top: 3px;
     padding: 0;
-    padding-top: 7px;
-    padding-bottom: 7px;
+    padding-top: 6px;
+    padding-bottom: 6px;
 
     &--mobile {
       display: none;
     }
-
-    &--current-filter {
-      display: block;
-    }
   }
 
   .upload-photo__slider-button {
-    top: 1px;
+    top: 0;
+    cursor: pointer;
+
+    &--crop {
+      right: 42px;
+    }
+
+    &--fill {
+      right: 163px;
+    }
+
+    &--contrast {
+      right: 92px;
+    }
   }
 
   .upload-photo__slider-bar {
@@ -266,6 +304,7 @@
   }
 
   .upload-photo__container-button {
+    padding-top: 65px;
     padding-right: 13px;
     padding-left: 2px;
 
@@ -278,29 +317,37 @@
     width: 310px;
     padding-left: 35px;
   }
+
+  .upload-photo__button {
+    margin-bottom: 25px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .upload-photo__container {
-    width: 960px;
+    width: 940px;
     margin: 0 auto;
+    padding-right: 10px;
+    padding-left: 10px;
   }
 
   .upload-photo__wrapper {
-    width: 940px;
+    width: 920px;
     margin: 0 auto;
-    padding-right: 60px;
-    padding-left: 80px;
+    padding-right: 50px;
+    padding-left: 70px;
   }
 
   .upload-photo__image {
-    width: 391px;
+    width: 390px;
     padding-right: 90px;
   }
 
   .upload-photo__text {
     width: 960px;
     margin: 0 auto;
+    margin-bottom: 22px;
+    padding-top: 58px;
   }
 
   .upload-photo__filter-selection {
@@ -309,36 +356,78 @@
 
   .upload-photo__item-filter {
     width: 410px;
-  }
-
-  .upload-photo__tool {
-    width: 92px;
-    height: 48px;
-
-    &--crop {
-      &::before {
-        width: 48px;
-        height: 48px;
-      }
-    }
+    padding: 0;
 
     &--fill {
-      &::before {
-        width: 48px;
-        height: 43px;
-      }
+      padding-top: 16px;
     }
 
     &--contrast {
-      &::before {
-        width: 32px;
-        height: 32px;
-      }
+      padding-top: 18px;
+    }
+  }
+
+  .upload-photo__tool {
+    &--crop {
+      margin-right: 48px;
+    }
+
+    &--fill {
+      margin-right: 44px;
+    }
+
+    &--contrast {
+      margin-right: 55px;
+    }
+  }
+
+  .upload-photo__icon {
+    &--crop {
+      width: 44px;
+      height: 44px;
+    }
+
+    &--fill {
+      width: 48px;
+      height: 43px;
+    }
+
+    &--contrast {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  .upload-photo__slider {
+    &--crop {
+      margin-top: 13px;
+    }
+
+    &--fill {
+      margin-top: 15px;
+    }
+
+    &--contrast {
+      margin-top: 10px;
     }
   }
 
   .upload-photo__slider-bar {
     width: 288px;
+  }
+
+  .upload-photo__slider-button {
+    &--crop {
+      right: 203px;
+    }
+
+    &--fill {
+      right: 26px;
+    }
+
+    &--contrast {
+      right: 114px;
+    }
   }
 
   .upload-photo__container-control {
@@ -358,7 +447,7 @@
   .upload-photo__button {
     display: block;
     width: 184px;
-    margin-right: 38px;
+    margin-right: 43px;
     margin-bottom: 0;
 
     &:nth-child(even) {

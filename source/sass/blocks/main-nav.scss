@@ -76,6 +76,7 @@
 }
 
 @media (min-width: $tablet-width) {
+  .main-nav--closed .main-nav__toggle,
   .main-nav--opened .main-nav__toggle {
     top: -66px;
   }
@@ -89,5 +90,9 @@
 
   .main-nav__toggle {
     display: none;
+  }
+
+  .main-nav--closed > .main-nav__wrapper {
+    display: block;
   }
 }
