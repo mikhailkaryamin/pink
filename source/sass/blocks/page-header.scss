@@ -59,6 +59,12 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-header {
+    position: relative;
+    z-index: 200;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
   .page-header__logotype-desktop {
     display: inline-block;
     margin-top: 25px;
@@ -69,17 +75,13 @@
     display: none;
   }
 
-  .page-header {
-    background-color: #1c232b;
-  }
-
   .page-header__wrapper {
     display: flex;
     width: 1200px;
     margin: 0 auto;
     padding-right: 120px;
     padding-left: 120px;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: transparent;
   }
 
   .page-header__logo {

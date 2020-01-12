@@ -1,6 +1,7 @@
 .os-list {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -8,13 +9,14 @@
 
 .os-list__item {
   width: 47px;
-  height: 56px;
+  height: 76px;
+  padding-bottom: 20px;
 
-  &:first-of-type {
+  &:nth-child(3n + 1) {
     margin-right: 35px;
   }
 
-  &:last-of-type {
+  &:nth-child(3n) {
     margin-left: 31px;
   }
 }
