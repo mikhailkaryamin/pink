@@ -2,7 +2,7 @@
   position: relative;
   display: block;
   padding-left: 70px;
-  font-size: 18px;
+  font-size: $main-font-size;
   line-height: 30px;
 }
 
@@ -17,7 +17,7 @@
   background-color: #ffffff;
 
   &:hover {
-    border-color: #283645;
+    border-color: $blue;
   }
 
   &:active,
@@ -27,7 +27,7 @@
 }
 
 .radio:hover > .radio__item {
-  border-color: #283645;
+  border-color: $blue;
 }
 
 .radio:active > .radio__item {
@@ -47,7 +47,7 @@
     width: 15px;
     height: 15px;
     border-radius: 7.5px;
-    background-color: #d22856;
+    background-color: $color-pink;
   }
 }
 

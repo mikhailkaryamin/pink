@@ -5,7 +5,7 @@
   outline: none;
 
   &:hover {
-    border-color: #283645;
+    border-color: $blue;
   }
 
   &:active,
@@ -15,31 +15,31 @@
 }
 
 .input::-moz-placeholder {
-  color: #283645;
-  font-size: 18px;
+  color: $blue;
+  font-size: $main-font-size;
   line-height: 30px;
 }
 
 .input::-webkit-input-placeholder {
-  color: #283645;
-  font-size: 18px;
+  color: $blue;
+  font-size: $main-font-size;
   line-height: 30px;
 }
 
 .input:-ms-input-placeholder {
-  color: #283645;
-  font-size: 18px;
+  color: $blue;
+  font-size: $main-font-size;
   line-height: 30px;
 }
 
 .input::-ms-input-placeholder {
-  color: #283645;
-  font-size: 18px;
+  color: $blue;
+  font-size: $main-font-size;
   line-height: 30px;
 }
 
 .input::placeholder {
-  color: #283645;
-  font-size: 18px;
+  color: $blue;
+  font-size: $main-font-size;
   line-height: 30px;
 }

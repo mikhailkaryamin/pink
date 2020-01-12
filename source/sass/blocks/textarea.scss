@@ -5,32 +5,32 @@
 }
 
 .textarea::-moz-placeholder {
-  color: #283645;
-  font-size: 18px;
+  color: $blue;
+  font-size: $main-font-size;
   line-height: 30px;
 }
 
 .textarea::-webkit-input-placeholder {
-  color: #283645;
-  font-size: 18px;
+  color: $blue;
+  font-size: $main-font-size;
   line-height: 30px;
 }
 
 .textarea:-ms-input-placeholder {
-  color: #283645;
-  font-size: 18px;
+  color: $blue;
+  font-size: $main-font-size;
   line-height: 30px;
 }
 
 .textarea::-ms-input-placeholder {
-  color: #283645;
-  font-size: 18px;
+  color: $blue;
+  font-size: $main-font-size;
   line-height: 30px;
 }
 
 .textarea::placeholder {
-  color: #283645;
-  font-size: 18px;
+  color: $blue;
+  font-size: $main-font-size;
   line-height: 30px;
 }
 

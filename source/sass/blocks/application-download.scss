@@ -56,7 +56,7 @@
   padding-top: 17px;
   padding-bottom: 17px;
   color: #ffffff;
-  font-size: 18px;
+  font-size: $main-font-size;
   font-weight: 700;
   line-height: 18px;
   border: 2px solid #ffffff;
@@ -128,7 +128,7 @@
     margin: 0 auto;
     margin-bottom: 31px;
     color: #ffffff;
-    font-size: 40px;
+    font-size: $headline-tablet;
     font-weight: 300;
     line-height: 48px;
     text-align: center;
@@ -148,7 +148,7 @@
   .application-download__text {
     padding-right: 0;
     padding-left: 0;
-    font-size: 18px;
+    font-size: $main-font-size;
   }
 }
 
@@ -185,7 +185,7 @@
   .application-download__slogan {
     width: auto;
     margin-bottom: 51px;
-    font-size: 50px;
+    font-size: $headline-desktop;
     line-height: 60px;
   }
 

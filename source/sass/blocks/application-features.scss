@@ -1,7 +1,7 @@
 .application-features__wrapper {
   position: relative;
   padding: 20px;
-  background-color: #f2f2f2;
+  background-color: $light-gray;
   overflow: hidden;
 
   &--slogan {
@@ -34,7 +34,7 @@
   padding-right: 5px;
   padding-bottom: 5px;
   padding-left: 5px;
-  font-size: 24px;
+  font-size: $middle-font-size;
   font-weight: 300;
   line-height: 28px;
   text-align: center;
@@ -84,7 +84,7 @@
 }
 
 .application-features__item-headline {
-  font-size: 18px;
+  font-size: $main-font-size;
   font-weight: 700;
   line-height: 24px;
 }
@@ -106,7 +106,7 @@
   }
 
   .application-features__slogan {
-    font-size: 40px;
+    font-size: $headline-tablet;
   }
 
   .application-features__slogan-question {
@@ -161,7 +161,7 @@
     margin: 0 auto;
     padding-top: 36px;
     padding-bottom: 55px;
-    font-size: 50px;
+    font-size: $headline-desktop;
     line-height: 60px;
   }
 
@@ -223,7 +223,7 @@
     margin: 0;
     padding: 0 15px;
     padding-top: 19px;
-    font-size: 18px;
+    font-size: $main-font-size;
     line-height: 30px;
   }
 }

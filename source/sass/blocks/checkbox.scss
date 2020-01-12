@@ -2,7 +2,7 @@
   position: relative;
   display: block;
   padding-left: 68px;
-  font-size: 18px;
+  font-size: $main-font-size;
   line-height: 30px;
 }
 
@@ -19,7 +19,7 @@
   box-shadow: 0 0 0 0.1em #e5e5e5;
 
   &:hover {
-    box-shadow: 0 0 0 0.1em #283645;
+    box-shadow: 0 0 0 0.1em $blue;
   }
 
   &:active {
@@ -28,7 +28,7 @@
 }
 
 .checkbox:hover > .checkbox__item {
-  box-shadow: 0 0 0 0.1em #283645;
+  box-shadow: 0 0 0 0.1em $blue;
 }
 
 .checkbox:active > .checkbox__item {

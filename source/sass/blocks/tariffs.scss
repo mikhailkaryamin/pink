@@ -4,7 +4,7 @@
   padding-right: 20px;
   padding-bottom: 34px;
   padding-left: 20px;
-  background-color: #f2f2f2;
+  background-color: $light-gray;
   overflow: hidden;
 
   &::before {
@@ -34,9 +34,9 @@
   padding: 5px;
   padding-top: 17px;
   text-align: center;
-  border-right: 2px solid #f2f2f2;
-  border-left: 2px solid #f2f2f2;
-  background-color: #283645;
+  border-right: 2px solid $light-gray;
+  border-left: 2px solid $light-gray;
+  background-color: $blue;
 
   &--mobile-invis {
     display: none;
@@ -56,14 +56,14 @@
       height: 30px;
       padding-top: 3px;
       color: #ffffff;
-      background-color: #d22856;
+      background-color: $color-pink;
     }
   }
 }
 
 .tariffs__name {
   color: #ffffff;
-  font-size: 18px;
+  font-size: $main-font-size;
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
@@ -72,7 +72,7 @@
 .tariffs__cost {
   margin: 0;
   color: #ffffff;
-  font-size: 24px;
+  font-size: $middle-font-size;
   font-weight: 300;
   line-height: 30px;
 }
@@ -86,17 +86,17 @@
   padding-left: 24px;
   line-height: 30px;
   text-transform: uppercase;
-  border-top: 1px solid #f2f2f2;
-  border-right: 2px solid #f2f2f2;
-  border-bottom: 1px solid #f2f2f2;
-  border-left: 2px solid #f2f2f2;
+  border-top: 1px solid $light-gray;
+  border-right: 2px solid $light-gray;
+  border-bottom: 1px solid $light-gray;
+  border-left: 2px solid $light-gray;
   background-color: #ffffff;
 }
 
 .tariffs__addition-value {
   position: relative;
   width: 70px;
-  border: 1px solid #f2f2f2;
+  border: 1px solid $light-gray;
   background-color: #ffffff;
 
   &--mobile-invis {
@@ -157,7 +157,7 @@
     }
 
     &--none {
-      background-color: #f2f2f2;
+      background-color: $light-gray;
     }
 
     &--hit {
@@ -173,7 +173,7 @@
   }
 
   .tariffs__cost {
-    font-size: 18px;
+    font-size: $main-font-size;
   }
 
   .tariffs__addition {
@@ -228,7 +228,7 @@
     min-height: 60px;
     padding-top: 13px;
     padding-left: 20px;
-    font-size: 18px;
+    font-size: $main-font-size;
   }
 
   .tariffs__addition-value {
@@ -241,10 +241,10 @@
   }
 
   .tariffs__name {
-    font-size: 18px;
+    font-size: $main-font-size;
   }
 
   .tariffs__cost {
-    font-size: 24px;
+    font-size: $middle-font-size;
   }
 }

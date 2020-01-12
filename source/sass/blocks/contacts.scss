@@ -7,7 +7,7 @@
 
 .contacts__text {
   margin: 0;
-  font-size: 24px;
+  font-size: $middle-font-size;
   font-weight: 300;
   line-height: 28px;
   text-align: center;
@@ -31,14 +31,14 @@
 
 .contacts__type {
   margin-bottom: 4px;
-  font-size: 18px;
+  font-size: $main-font-size;
   font-weight: 700;
 }
 
 .contacts__value {
   position: relative;
-  color: #d22856;
-  font-size: 24px;
+  color: $color-pink;
+  font-size: $middle-font-size;
   font-weight: 300;
   line-height: 28px;
 
@@ -46,7 +46,7 @@
     cursor: pointer;
 
     &:hover {
-      color: #283645;
+      color: $blue;
 
       &::before {
         content: "";
@@ -55,7 +55,7 @@
         left: 0;
         width: 100%;
         height: 1px;
-        background-color: #283645;
+        background-color: $blue;
         box-shadow: 0 -1px 0 0 rgba(215, 217, 218, 1),
           0 1px 0 0 rgba(116, 122, 130, 1);
       }
@@ -82,7 +82,7 @@
   .contacts__text {
     width: 375px;
     margin: 0 auto;
-    font-size: 40px;
+    font-size: $headline-tablet;
     line-height: 1.15;
   }
 
@@ -129,7 +129,7 @@
     width: 500px;
     margin: 0 auto;
     margin-bottom: 45px;
-    font-size: 50px;
+    font-size: $headline-desktop;
   }
 
   .contacts__item {

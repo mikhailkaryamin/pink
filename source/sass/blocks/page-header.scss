@@ -6,7 +6,7 @@
 .page-header__wrapper {
   position: relative;
   z-index: 200;
-  background-color: #283645;
+  background-color: $blue;
 
   &--closed-menu {
     background-color: rgba(0, 0, 0, 0.3);

@@ -14,7 +14,7 @@
   cursor: pointer;
 
   &:hover {
-    color: #283645;
+    color: $blue;
   }
 
   &:active {
@@ -24,7 +24,7 @@
 
 @media (min-width: $desktop-width) {
   .copyright__text {
-    font-size: 18px;
+    font-size: $main-font-size;
     line-height: 18px;
   }
 }

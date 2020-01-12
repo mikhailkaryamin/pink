@@ -47,7 +47,7 @@
   }
 
   .research-application__link {
-    color: #d22856;
+    color: $color-pink;
     text-decoration: underline;
     cursor: pointer;
   }
@@ -57,7 +57,7 @@
   .research-application {
     padding-top: 100px;
     padding-bottom: 70px;
-    background-color: #f2f2f2;
+    background-color: $light-gray;
   }
 
   .research-application__container {
@@ -87,12 +87,12 @@
 
   .research-application__text {
     margin-bottom: 30px;
-    font-size: 18px;
+    font-size: $main-font-size;
     line-height: 30px;
   }
 
   .research-application__link {
-    font-size: 18px;
+    font-size: $main-font-size;
     line-height: 30px;
   }
 }
