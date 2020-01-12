@@ -4,18 +4,6 @@
   flex-direction: column;
 }
 
-// .user-photos__bg {
-//   position: absolute;
-//   top: -67px;
-//   z-index: 20;
-//   width: 100%;
-//   height: 236px;
-//   background-image: url("../img/bg-mobile.jpg");
-//   overflow: hidden;
-//   background-position: center;
-//   background-position-y: 0;
-// }
-
 .user-photos__headline-container {
   position: relative;
   min-height: 169px;
@@ -195,7 +183,6 @@
 
     &::before {
       top: -110px;
-      width: 100%;
       height: 438px;
       background-image: url("../img/bg-tablet.jpg");
     }
