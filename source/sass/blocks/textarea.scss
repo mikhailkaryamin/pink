@@ -33,3 +33,15 @@
   font-size: 18px;
   line-height: 30px;
 }
+
+@media (min-width: $tablet-width) {
+  .textarea {
+    min-height: 192px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .textarea {
+    min-height: 125px;
+  }
+}

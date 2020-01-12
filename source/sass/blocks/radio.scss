@@ -50,3 +50,13 @@
     background-color: #d22856;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .radio {
+    padding-left: 56px;
+  }
+
+  .radio__item {
+    margin-left: -56px;
+  }
+}

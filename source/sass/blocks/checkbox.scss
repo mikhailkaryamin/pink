@@ -1,7 +1,7 @@
 .checkbox {
   position: relative;
   display: block;
-  padding-left: 60px;
+  padding-left: 68px;
   font-size: 18px;
   line-height: 30px;
 }
@@ -10,8 +10,8 @@
   position: absolute;
   width: 37px;
   height: 37px;
-  margin-top: -0.3em;
-  margin-left: -60px;
+  margin-top: -0.2em;
+  margin-left: -68px;
   background-color: #ffffff;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -41,4 +41,14 @@
 
 .checkbox__input:checked + .checkbox__item {
   background-image: url("/img/checkbox-tick.png");
+}
+
+@media (min-width: $tablet-width) {
+  .checkbox {
+    padding-left: 58px;
+  }
+
+  .checkbox__item {
+    margin-left: -58px;
+  }
 }
