@@ -8,13 +8,18 @@
   </title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
   <script src="https://api-maps.yandex.ru/2.1/?apikey=8eb80068-db34-4c94-b5b5-8adb22241ace&lang=ru_RU"
     type="text/javascript">
     </script>
 </head>
 
 <body>
+  <div style="display: none;">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <header class="page-header">
     <div class="page-header__wrapper">
       <a class="page-header__logo">
@@ -107,6 +112,9 @@
         </div>
         <div class="application-download__hand">
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="../img/application-download__hand-desktop.webp">
+            <source type="image/webp" media="(min-width: 660px)" srcset="../img/application-download__hand-tablet.webp">
+            <source type="image/webp" srcset="../img/application-download__hand-mobile.webp">
             <source media="(min-width: 1200px)" srcset="../img/application-download__hand-desktop.png">
             <source media="(min-width: 660px)" srcset="../img/application-download__hand-tablet.png">
             <img src="../img/application-download__hand-mobile.png" width="280" height="286" alt="Фотоприложение Pink">
@@ -407,7 +415,7 @@
         <li class="social-list__item">
           <a class="social-list__twitter" href="http://twitter.com">
             <svg class="social-list__img" width="18" height="14">
-              <use xlink:href="/img/sprite.svg#social-list-twitter"></use>
+              <use xlink:href="/img/sprite.svg#social-list__twitter"></use>
             </svg>
             <span class="visually-hidden">
               Twitter
@@ -417,7 +425,7 @@
         <li class="social-list__item">
           <a class="social-list__facebook" href="http://facebook.com">
             <svg class="social-list__img" width="9" height="18">
-              <use xlink:href="/img/sprite.svg#social-list-facebook"></use>
+              <use xlink:href="/img/sprite.svg#social-list__facebook"></use>
             </svg>
             <span class="visually-hidden">
               Facebook
@@ -427,7 +435,7 @@
         <li class="social-list__item">
           <a class="social-list__youtube" href="http://youtube.com">
             <svg class="social-list__img" width="15" height="13">
-              <use xlink:href="/img/sprite.svg#social-list-youtube"></use>
+              <use xlink:href="/img/sprite.svg#social-list__youtube"></use>
             </svg>
             <span class="visually-hidden">
               Youtube

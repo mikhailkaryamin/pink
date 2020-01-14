@@ -8,10 +8,15 @@
   </title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
+  <div style="display: none;">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <header class="page-header">
     <div class="page-header__wrapper">
       <a href="index.html" class="page-header__logo">
@@ -238,8 +243,8 @@
       <ul class="page-footer__social-list social-list">
         <li class="social-list__item">
           <a class="social-list__twitter" href="http://twitter.com">
-            <svg class="social-list__img"  width="18" height="14">
-              <use xlink:href="/img/sprite.svg#social-list-twitter"></use>
+            <svg class="social-list__img" width="18" height="14">
+              <use xlink:href="/img/sprite.svg#social-list__twitter"></use>
             </svg>
             <span class="visually-hidden">
               Twitter
@@ -249,7 +254,7 @@
         <li class="social-list__item">
           <a class="social-list__facebook" href="http://facebook.com">
             <svg class="social-list__img" width="9" height="18">
-              <use xlink:href="/img/sprite.svg#social-list-facebook"></use>
+              <use xlink:href="/img/sprite.svg#social-list__facebook"></use>
             </svg>
             <span class="visually-hidden">
               Facebook
@@ -259,7 +264,7 @@
         <li class="social-list__item">
           <a class="social-list__youtube" href="http://youtube.com">
             <svg class="social-list__img" width="15" height="13">
-              <use xlink:href="/img/sprite.svg#social-list-youtube"></use>
+              <use xlink:href="/img/sprite.svg#social-list__youtube"></use>
             </svg>
             <span class="visually-hidden">
               Youtube
@@ -282,8 +287,8 @@
       </div>
     </div>
   </footer>
-  <!-- <script src="js/main.js">
-  </script> -->
+  <script src="js/main.js">
+  </script>
 </body>
 
 </html>
