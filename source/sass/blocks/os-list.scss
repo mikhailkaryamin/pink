@@ -28,16 +28,16 @@
   background-repeat: no-repeat;
 
   &--ios {
-    background-image: url("/img/os-list__apple-mobile.svg");
+    background-image: url("/pink/img/os-list__apple-mobile.svg");
   }
 
   &--android {
-    background-image: url("/img/os-list__android-mobile.svg");
+    background-image: url("/pink/img/os-list__android-mobile.svg");
     background-position-y: 7px;
   }
 
   &--wp {
-    background-image: url("/img/os-list__wp-mobile.svg");
+    background-image: url("/pink/img/os-list__wp-mobile.svg");
     background-position-y: 10px;
   }
 }

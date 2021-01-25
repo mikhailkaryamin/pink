@@ -72,7 +72,7 @@
       left: calc(50% - 78px);
       width: 160px;
       height: 281px;
-      background-image: url("/img/application-features__list-bg-mobile.png");
+      background-image: url("/pink/img/application-features__list-bg-mobile.png");
       background-repeat: no-repeat;
     }
   }
@@ -138,7 +138,7 @@
         left: -310px;
         width: 267px;
         height: 486px;
-        background-image: url("/img/application-features__list-bg-tablet.png");
+        background-image: url("/pink/img/application-features__list-bg-tablet.png");
       }
     }
   }
@@ -197,19 +197,19 @@
 
     &--mood {
       &::before {
-        background-image: url("/img/application-features__list-bg-mood-desktop.png");
+        background-image: url("/pink/img/application-features__list-bg-mood-desktop.png");
       }
     }
 
     &--world {
       &::before {
-        background-image: url("/img/application-features__list-bg-world-desktop.png");
+        background-image: url("/pink/img/application-features__list-bg-world-desktop.png");
       }
     }
 
     &--new-friends {
       &::before {
-        background-image: url("/img/application-features__list-bg-friends-desktop.png");
+        background-image: url("/pink/img/application-features__list-bg-friends-desktop.png");
       }
     }
   }
