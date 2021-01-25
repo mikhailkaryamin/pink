@@ -11,4 +11,4 @@ npm-debug.*
 Thumbs.db
 node_modules
 package-lock.json
-.build/
+build
